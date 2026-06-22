@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
+    "deploy:github": "node scripts/deploy-github.mjs",
     "lint": "eslint .",
     "preview": "vite preview",
     "scrape:videos": "node scripts/scrape-youtube.mjs",

@@ -33,11 +33,13 @@ jobs:
 
       - name: Build for GitHub Pages
         run: npm run build
-        env:
-          GITHUB_PAGES: 'true'
 
       - name: SPA fallback
-        run: cp dist/index.html dist/404.html
+        run: |
+          if [ ! -f dist/index.html ]; then
+            cp dist/index.dev.html dist/index.html
+          fi
+          cp dist/index.html dist/404.html
 
       - name: Setup Pages
         uses: actions/configure-pages@v5

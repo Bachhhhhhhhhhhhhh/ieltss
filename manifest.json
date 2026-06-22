@@ -1,0 +1,20 @@
+{
+  "name": "IELTS Mastery by Truong The Bach",
+  "short_name": "IELTS Mastery",
+  "description": "Nâng band IELTS thông minh – Premium IELTS preparation platform",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0F172A",
+  "theme_color": "#14B8A6",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "lang": "vi",
+  "categories": ["education", "productivity"]
+}
