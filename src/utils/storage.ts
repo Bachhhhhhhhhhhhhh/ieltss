@@ -6,6 +6,8 @@ const LANG_KEY = 'ielts-mastery-lang';
 
 export const defaultProgress: UserProgress = {
   name: 'Truong The Bach',
+  targetBand: 7,
+  onboardingComplete: false,
   streak: 0,
   lastActiveDate: '',
   totalTests: 0,

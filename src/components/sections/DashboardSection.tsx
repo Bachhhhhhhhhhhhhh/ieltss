@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
-import { Flame, ClipboardList, Target, Download, Trophy } from 'lucide-react';
+import { Flame, ClipboardList, Target, Download, Trophy, TrendingUp } from 'lucide-react';
+import { BandGoalRing } from '../ui/BandGoalRing';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, BarChart, Bar, RadarChart, PolarGrid, PolarAngleAxis, Radar } from 'recharts';
 import { toast } from 'sonner';
 import { useLanguage } from '../../context/LanguageContext';
@@ -41,6 +42,28 @@ export function DashboardSection() {
       <div className="absolute inset-0 mesh-bg opacity-30 pointer-events-none" />
       <div className="relative">
         <SectionHeader title={t.dashboard.title} subtitle={t.dashboard.subtitle} />
+
+        <GlowCard glow="teal" className="mb-10 !p-8">
+          <div className="flex flex-col md:flex-row items-center gap-8">
+            <BandGoalRing current={progress.averageBand} target={progress.targetBand || 7} size={160} />
+            <div className="flex-1 text-center md:text-left">
+              <p className="text-sm font-bold uppercase tracking-widest text-accent-teal mb-2">{t.dashboard.goalProgress}</p>
+              <h3 className="font-display text-2xl font-extrabold text-slate-900 dark:text-white mb-4">
+                {progress.name || t.common.guest} → Band {(progress.targetBand || 7).toFixed(1)}
+              </h3>
+              <div className="flex flex-wrap gap-4 justify-center md:justify-start">
+                <div className="flex items-center gap-2 px-4 py-2 rounded-xl bg-slate-100/80 dark:bg-slate-800/80">
+                  <Target size={16} className="text-accent-teal" />
+                  <span className="text-sm">{t.dashboard.targetBand}: <strong>{(progress.targetBand || 7).toFixed(1)}</strong></span>
+                </div>
+                <div className="flex items-center gap-2 px-4 py-2 rounded-xl bg-slate-100/80 dark:bg-slate-800/80">
+                  <TrendingUp size={16} className="text-accent-indigo" />
+                  <span className="text-sm">{t.dashboard.gapToGoal}: <strong>{Math.max(0, (progress.targetBand || 7) - progress.averageBand).toFixed(1)}</strong></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </GlowCard>
 
         <div className="grid sm:grid-cols-3 gap-6 mb-10">
           {stats.map((stat, i) => (

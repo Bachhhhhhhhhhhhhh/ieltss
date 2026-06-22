@@ -26,7 +26,7 @@ export function SectionHeader({ badge, title, subtitle, align = 'center' }: Sect
           {badge}
         </motion.span>
       )}
-      <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 dark:text-white mb-4 text-balance leading-tight">
+      <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 dark:text-white mb-4 text-balance leading-tight tracking-tight">
         {title}
       </h2>
       {subtitle && (

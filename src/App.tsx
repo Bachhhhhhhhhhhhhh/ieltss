@@ -15,6 +15,12 @@ import { HowItWorks } from './components/sections/HowItWorks';
 import { Testimonials } from './components/sections/Testimonials';
 import { CTABanner } from './components/sections/CTABanner';
 import { DailyChallenge } from './components/sections/DailyChallenge';
+import { TrustMarquee } from './components/sections/TrustMarquee';
+import { ProductShowcase } from './components/sections/ProductShowcase';
+import { ComparisonSection } from './components/sections/ComparisonSection';
+import { FAQSection } from './components/sections/FAQSection';
+import { ScrollProgress } from './components/ui/ScrollProgress';
+import { OnboardingFlow } from './components/ui/OnboardingFlow';
 
 const PracticeSection = lazy(() => import('./components/sections/PracticeSection').then((m) => ({ default: m.PracticeSection })));
 const MockTestSimulator = lazy(() => import('./components/mocktest/MockTestSimulator').then((m) => ({ default: m.MockTestSimulator })));
@@ -61,11 +67,15 @@ function AppContent() {
         return (
           <>
             <Hero onStartPractice={() => navigate('practice')} onViewMock={() => navigate('mock')} />
+            <TrustMarquee />
             <FeaturesShowcase />
+            <ProductShowcase />
             <DailyChallenge />
             <HowItWorks />
+            <ComparisonSection />
             <LazyPage><PracticeSection /></LazyPage>
             <Testimonials />
+            <FAQSection />
             <CTABanner onStart={() => navigate('mock')} />
           </>
         );
@@ -81,6 +91,8 @@ function AppContent() {
 
   return (
     <div className="min-h-screen flex flex-col bg-slate-50 dark:bg-[#0a0f1e] text-slate-900 dark:text-slate-100 transition-colors duration-500">
+      <ScrollProgress />
+      <OnboardingFlow />
       {isPending && <PageLoader />}
       <Navbar currentPage={page} onNavigate={navigate} />
       <main className="flex-1 pt-16 pb-28 lg:pb-0">

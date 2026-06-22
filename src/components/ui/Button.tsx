@@ -13,8 +13,8 @@ interface ButtonProps {
 }
 
 const variants = {
-  primary: 'bg-accent-teal text-white shadow-lg shadow-accent-teal/25 hover:bg-teal-600',
-  secondary: 'bg-accent-indigo text-white shadow-lg shadow-accent-indigo/25 hover:bg-indigo-600',
+  primary: 'bg-gradient-to-r from-accent-teal to-teal-600 text-white shadow-lg shadow-accent-teal/25 hover:from-teal-500 hover:to-teal-700',
+  secondary: 'bg-gradient-to-r from-accent-indigo to-indigo-600 text-white shadow-lg shadow-accent-indigo/25 hover:from-indigo-500 hover:to-indigo-700',
   ghost: 'bg-transparent hover:bg-white/10 text-current',
   outline: 'border-2 border-accent-teal text-accent-teal hover:bg-accent-teal/10',
 };

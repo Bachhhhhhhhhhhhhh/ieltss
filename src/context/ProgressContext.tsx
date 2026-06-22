@@ -11,6 +11,9 @@ interface ProgressContextType {
   completeDailyChallenge: (date: string) => void;
   saveContactMessage: (msg: Omit<ContactMessage, 'id' | 'date'>) => void;
   updateStreak: () => void;
+  setTargetBand: (band: number) => void;
+  setUserName: (name: string) => void;
+  completeOnboarding: () => void;
 }
 
 const ProgressContext = createContext<ProgressContextType | null>(null);
@@ -130,6 +133,18 @@ export function ProgressProvider({ children }: { children: ReactNode }) {
     }));
   }, []);
 
+  const setTargetBand = useCallback((band: number) => {
+    setProgress((prev) => ({ ...prev, targetBand: band }));
+  }, []);
+
+  const setUserName = useCallback((name: string) => {
+    setProgress((prev) => ({ ...prev, name }));
+  }, []);
+
+  const completeOnboarding = useCallback(() => {
+    setProgress((prev) => ({ ...prev, onboardingComplete: true }));
+  }, []);
+
   return (
     <ProgressContext.Provider
       value={{
@@ -140,6 +155,9 @@ export function ProgressProvider({ children }: { children: ReactNode }) {
         completeDailyChallenge,
         saveContactMessage,
         updateStreak,
+        setTargetBand,
+        setUserName,
+        completeOnboarding,
       }}
     >
       {children}

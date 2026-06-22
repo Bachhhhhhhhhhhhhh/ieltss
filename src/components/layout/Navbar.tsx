@@ -39,16 +39,16 @@ export function Navbar({ currentPage, onNavigate }: NavbarProps) {
     <motion.nav
       initial={{ y: -100 }}
       animate={{ y: 0 }}
-      className={`fixed top-0 left-0 right-0 z-40 transition-all duration-500 ${
+      className={`fixed top-[2px] left-0 right-0 z-40 transition-all duration-500 ${
         scrolled
-          ? 'bg-white/80 dark:bg-slate-900/80 backdrop-blur-2xl shadow-lg shadow-black/5 border-b border-white/10'
+          ? 'bg-white/85 dark:bg-slate-900/85 backdrop-blur-2xl shadow-lg shadow-black/5 border-b border-slate-200/30 dark:border-slate-700/30'
           : 'bg-transparent'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <motion.button whileHover={{ scale: 1.02 }} onClick={() => onNavigate('home')} className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-accent-teal to-accent-indigo flex items-center justify-center text-white font-bold text-sm shadow-glow">IM</div>
+            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-accent-teal to-accent-indigo flex items-center justify-center text-white font-bold text-sm shadow-glow ring-2 ring-white/20">IM</div>
             <div className="hidden sm:block text-left">
               <div className="font-bold text-slate-900 dark:text-white text-sm leading-tight">{t.brand.name}</div>
               <div className="text-[10px] text-slate-500 dark:text-slate-400 tracking-wide">{t.brand.by}</div>

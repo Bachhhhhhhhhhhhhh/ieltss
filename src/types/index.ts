@@ -292,6 +292,8 @@ export interface TestAttempt {
 
 export interface UserProgress {
   name: string;
+  targetBand: number;
+  onboardingComplete: boolean;
   streak: number;
   lastActiveDate: string;
   totalTests: number;

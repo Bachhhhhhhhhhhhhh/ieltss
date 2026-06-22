@@ -13,6 +13,7 @@ export default {
       },
       fontFamily: {
         sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+        display: ['"Plus Jakarta Sans"', 'Inter', 'system-ui', 'sans-serif'],
       },
       animation: {
         gradient: 'gradient 8s ease infinite',
@@ -22,6 +23,10 @@ export default {
         shimmer: 'shimmer 2.5s linear infinite',
         'spin-slow': 'spin 12s linear infinite',
         'border-flow': 'border-flow 4s linear infinite',
+        marquee: 'marquee 40s linear infinite',
+        'marquee-reverse': 'marquee-reverse 40s linear infinite',
+        aurora: 'aurora 12s ease-in-out infinite',
+        'fade-up': 'fade-up 0.6s ease-out forwards',
       },
       keyframes: {
         gradient: {
@@ -43,6 +48,23 @@ export default {
         'border-flow': {
           '0%, 100%': { backgroundPosition: '0% 50%' },
           '50%': { backgroundPosition: '100% 50%' },
+        },
+        marquee: {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-50%)' },
+        },
+        'marquee-reverse': {
+          '0%': { transform: 'translateX(-50%)' },
+          '100%': { transform: 'translateX(0)' },
+        },
+        aurora: {
+          '0%, 100%': { transform: 'translate(0, 0) scale(1)' },
+          '33%': { transform: 'translate(30px, -20px) scale(1.05)' },
+          '66%': { transform: 'translate(-20px, 15px) scale(0.95)' },
+        },
+        'fade-up': {
+          '0%': { opacity: '0', transform: 'translateY(24px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
         },
       },
       boxShadow: {
