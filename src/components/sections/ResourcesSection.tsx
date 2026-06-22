@@ -4,8 +4,11 @@ import { motion, AnimatePresence } from 'framer-motion';
 import {
   ExternalLink, FileText, Award, PenLine, Play, BookOpen, Clock, User, Filter,
   Globe, MessageSquare, Calendar, ChevronDown, ChevronUp, Lightbulb, Link2, Search, LayoutTemplate,
-  Layers, Library, HelpCircle, AlertTriangle,
+  Layers, Library, HelpCircle, AlertTriangle, BookMarked, Tablet,
 } from 'lucide-react';
+import { digitalBookLibrary, digitalBookByBookId } from '../../data/digitalBooks';
+import { EbookReader } from '../resources/EbookReader';
+import type { BookResource, DigitalBook } from '../../types';
 import { useLanguage } from '../../context/LanguageContext';
 import { knowledgeBase } from '../../data/knowledgeBase';
 import { bandDescriptors } from '../../data/bandDescriptors';
@@ -32,7 +35,7 @@ import type { Skill, KnowledgeArticle, TopicVocabulary } from '../../types';
 
 const PAGE_SIZE = 24;
 
-type Tab = 'knowledge' | 'collocations' | 'topicVocab' | 'questionGuides' | 'videos' | 'books' | 'tools' | 'phrases' | 'plans' | 'templates' | 'bands' | 'samples';
+type Tab = 'ebooks' | 'knowledge' | 'collocations' | 'topicVocab' | 'questionGuides' | 'videos' | 'books' | 'tools' | 'phrases' | 'plans' | 'templates' | 'bands' | 'samples';
 type SampleSubTab = 'writing' | 'speaking';
 type KnowledgeCategory = 'all' | 'format' | 'scoring' | 'tips' | 'preparation' | 'vocabulary';
 
@@ -139,10 +142,12 @@ export function ResourcesSection() {
       sessionStorage.removeItem(RESOURCES_TAB_KEY);
       return saved;
     }
-    return 'videos';
+    return 'ebooks';
   });
   const [videoFilter, setVideoFilter] = useState<Skill | 'all'>('all');
   const [bookFilter, setBookFilter] = useState<Skill | 'all'>('all');
+  const [softCopyOnly, setSoftCopyOnly] = useState(false);
+  const [openEbook, setOpenEbook] = useState<{ book: BookResource; digital: DigitalBook } | null>(null);
   const [toolFilter, setToolFilter] = useState<Skill | 'all'>('all');
   const [phraseFilter, setPhraseFilter] = useState<Skill | 'all'>('all');
   const [knowledgeFilter, setKnowledgeFilter] = useState<KnowledgeCategory>('all');
@@ -206,9 +211,18 @@ export function ResourcesSection() {
   }, [knowledgeFilter, q, matchesSearch]);
 
   const filteredBooksSearch = useMemo(() => {
-    if (!q) return filteredBooks;
-    return filteredBooks.filter((b) => matchesSearch(b.title.en, b.title.vi) || matchesSearch(b.description.en, b.description.vi));
-  }, [filteredBooks, q, matchesSearch]);
+    let items = filteredBooks;
+    if (softCopyOnly) items = items.filter((b) => digitalBookByBookId.has(b.id));
+    if (!q) return items;
+    return items.filter((b) => matchesSearch(b.title.en, b.title.vi) || matchesSearch(b.description.en, b.description.vi));
+  }, [filteredBooks, q, matchesSearch, softCopyOnly]);
+
+  const filteredEbooks = useMemo(() => {
+    let items = bookLibrary.filter((b) => digitalBookByBookId.has(b.id));
+    if (bookFilter !== 'all') items = items.filter((b) => b.skill === bookFilter || b.skill === 'all');
+    if (!q) return items;
+    return items.filter((b) => matchesSearch(b.title.en, b.title.vi) || matchesSearch(b.description.en, b.description.vi));
+  }, [bookFilter, q, matchesSearch]);
 
   const filteredToolsSearch = useMemo(() => {
     if (!q) return filteredTools;
@@ -323,7 +337,13 @@ export function ResourcesSection() {
 
   const totalResources = resourceStats.total;
 
+  const openReader = useCallback((book: BookResource) => {
+    const digital = digitalBookByBookId.get(book.id);
+    if (digital) setOpenEbook({ book, digital });
+  }, []);
+
   const tabs: { key: Tab; label: string; icon: typeof FileText; count?: number }[] = [
+    { key: 'ebooks', label: t.resources.ebooks, icon: Tablet, count: digitalBookLibrary.length },
     { key: 'knowledge', label: t.resources.knowledge, icon: FileText, count: knowledgeBase.length },
     { key: 'topicVocab', label: t.resources.topicVocabulary, icon: Library, count: resourceStats.topicVocabulary },
     { key: 'collocations', label: t.resources.collocations, icon: Layers, count: collocations.length },
@@ -346,6 +366,7 @@ export function ResourcesSection() {
 
         <div className="glass-card rounded-2xl p-4 mb-8 flex flex-wrap items-center justify-center gap-6 border border-accent-teal/15">
           {[
+            { label: t.resources.ebooks, count: digitalBookLibrary.length, color: 'text-emerald-500' },
             { label: t.resources.topicVocabulary, count: resourceStats.topicVocabulary, color: 'text-accent-teal' },
             { label: t.resources.collocations, count: collocations.length, color: 'text-teal-500' },
             { label: t.resources.questionGuides, count: questionTypeGuides.length, color: 'text-accent-indigo' },
@@ -393,6 +414,52 @@ export function ResourcesSection() {
         </div>
 
         <AnimatePresence mode="wait">
+          {tab === 'ebooks' && (
+            <motion.div key="ebooks" initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }} className="mb-12">
+              <div className="glass-card rounded-2xl p-6 mb-8 border border-emerald-500/25 bg-gradient-to-r from-emerald-500/5 to-accent-teal/5 text-center">
+                <BookMarked className="mx-auto mb-3 text-emerald-500" size={32} />
+                <h3 className="font-display text-xl font-extrabold text-slate-900 dark:text-white mb-2">{t.resources.ebooks}</h3>
+                <p className="text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">{t.resources.ebooksIntro}</p>
+                <p className="text-xs text-accent-teal font-semibold mt-3">{t.resources.readOnSite}</p>
+              </div>
+              <SkillFilterBar filters={skillFilters} active={bookFilter} onChange={setBookFilter} label={skillLabel} />
+              <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+                {filteredEbooks.length === 0 && <p className="text-center text-slate-500 py-12 col-span-full">{t.resources.noResults}</p>}
+                {filteredEbooks.map((book, i) => {
+                  const digital = digitalBookByBookId.get(book.id)!;
+                  return (
+                    <GlowCard key={book.id} glow="teal" delay={i * 0.02} className="group flex flex-col h-full">
+                      <div className="flex items-start gap-4 mb-4">
+                        <div className={`w-14 h-20 rounded-lg bg-gradient-to-br ${digital.coverGradient} flex flex-col items-center justify-center shrink-0 shadow-lg text-white`}>
+                          <BookOpen size={22} />
+                          <span className="text-[9px] font-bold mt-1 opacity-80">PDF</span>
+                        </div>
+                        <div className="flex-1 min-w-0">
+                          <span className="inline-flex items-center gap-1 text-[10px] font-bold uppercase text-emerald-600 bg-emerald-500/10 px-2 py-0.5 rounded-full mb-2">
+                            <Tablet size={10} /> {t.resources.softCopyBadge}
+                          </span>
+                          <h4 className="font-bold text-sm leading-snug mb-1 group-hover:text-accent-teal transition-colors line-clamp-2">{bt(book.title)}</h4>
+                          <p className="text-xs text-slate-500">{book.author}</p>
+                        </div>
+                      </div>
+                      <p className="text-xs text-slate-600 dark:text-slate-400 line-clamp-2 mb-4 flex-1">{bt(book.description)}</p>
+                      <div className="flex flex-wrap gap-2 text-[10px] font-semibold text-slate-400 mb-4">
+                        <span>{digital.chapters.length} {t.resources.chapters}</span>
+                        <span>·</span>
+                        <span>~{digital.pageEstimate} {t.resources.pages}</span>
+                        <span>·</span>
+                        <span className="text-accent-teal">{book.level}</span>
+                      </div>
+                      <Button size="sm" className="w-full shimmer-btn" onClick={() => openReader(book)}>
+                        <BookMarked size={16} /> {t.resources.readNow}
+                      </Button>
+                    </GlowCard>
+                  );
+                })}
+              </div>
+            </motion.div>
+          )}
+
           {tab === 'knowledge' && (
             <motion.div key="knowledge" initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }} className="mb-12">
               <div className="flex flex-wrap gap-2 justify-center mb-8">
@@ -566,27 +633,58 @@ export function ResourcesSection() {
           {tab === 'books' && (
             <motion.div key="books" initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }} className="mb-12">
               <SkillFilterBar filters={skillFilters} active={bookFilter} onChange={setBookFilter} label={skillLabel} />
+              <div className="flex justify-center mb-6">
+                <button
+                  type="button"
+                  onClick={() => setSoftCopyOnly(!softCopyOnly)}
+                  className={`flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold transition-all ${softCopyOnly ? 'bg-emerald-500 text-white' : 'glass-card text-slate-500'}`}
+                >
+                  <Tablet size={16} /> {t.resources.softCopyOnly}
+                </button>
+              </div>
               <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
                 {filteredBooksSearch.length === 0 ? <p className="text-center text-slate-500 py-12 col-span-full">{t.resources.noResults}</p> : null}
-                {filteredBooksSearch.map((book, i) => (
-                  <GlowCard key={book.id} glow="indigo" delay={i * 0.03} onClick={book.link ? () => window.open(book.link, '_blank') : undefined} className={book.link ? 'cursor-pointer group' : ''}>
-                    <div className="flex items-start gap-4">
-                      <div className={`w-12 h-16 rounded-lg bg-gradient-to-br ${skillColors[book.skill]} flex items-center justify-center shrink-0 shadow-lg`}>
-                        <BookOpen size={20} className="text-white" />
-                      </div>
-                      <div className="flex-1 min-w-0">
-                        <div className="flex items-center gap-2 mb-1">
-                          <span className="text-[10px] font-bold uppercase text-accent-indigo">{book.type}</span>
-                          <span className="text-[10px] text-slate-400">{book.level}</span>
+                {filteredBooksSearch.map((book, i) => {
+                  const digital = digitalBookByBookId.get(book.id);
+                  const gradient = digital?.coverGradient ?? skillColors[book.skill];
+                  return (
+                    <GlowCard key={book.id} glow="indigo" delay={i * 0.03} className="group flex flex-col h-full">
+                      <div className="flex items-start gap-4 mb-3">
+                        <div className={`w-12 h-16 rounded-lg bg-gradient-to-br ${gradient} flex items-center justify-center shrink-0 shadow-lg`}>
+                          <BookOpen size={20} className="text-white" />
                         </div>
-                        <h4 className="font-bold text-sm leading-snug mb-1 group-hover:text-accent-indigo transition-colors">{bt(book.title)}</h4>
-                        <p className="text-xs text-slate-500 mb-2">{book.author}{book.publisher ? ` · ${book.publisher}` : ''}</p>
-                        <p className="text-xs text-slate-600 dark:text-slate-400 line-clamp-2">{bt(book.description)}</p>
-                        {book.link && <span className="inline-flex items-center gap-1 text-xs text-accent-teal font-semibold mt-2"><ExternalLink size={12} /> {t.resources.viewBook}</span>}
+                        <div className="flex-1 min-w-0">
+                          <div className="flex items-center gap-2 mb-1 flex-wrap">
+                            <span className="text-[10px] font-bold uppercase text-accent-indigo">{book.type}</span>
+                            {digital && (
+                              <span className="text-[10px] font-bold uppercase text-emerald-600 bg-emerald-500/10 px-1.5 py-0.5 rounded">{t.resources.softCopy}</span>
+                            )}
+                            <span className="text-[10px] text-slate-400">{book.level}</span>
+                          </div>
+                          <h4 className="font-bold text-sm leading-snug mb-1 group-hover:text-accent-indigo transition-colors">{bt(book.title)}</h4>
+                          <p className="text-xs text-slate-500 mb-1">{book.author}{book.publisher ? ` · ${book.publisher}` : ''}</p>
+                          <p className="text-xs text-slate-600 dark:text-slate-400 line-clamp-2">{bt(book.description)}</p>
+                        </div>
                       </div>
-                    </div>
-                  </GlowCard>
-                ))}
+                      <div className="mt-auto flex flex-col gap-2">
+                        {digital && (
+                          <Button size="sm" className="w-full" onClick={() => openReader(book)}>
+                            <BookMarked size={16} /> {t.resources.readNow}
+                          </Button>
+                        )}
+                        {book.link && (
+                          <button
+                            type="button"
+                            onClick={() => window.open(book.link, '_blank')}
+                            className="w-full text-xs text-slate-500 hover:text-accent-teal flex items-center justify-center gap-1 py-1"
+                          >
+                            <ExternalLink size={12} /> {t.resources.viewBook}
+                          </button>
+                        )}
+                      </div>
+                    </GlowCard>
+                  );
+                })}
               </div>
             </motion.div>
           )}
@@ -797,6 +895,12 @@ export function ResourcesSection() {
       {activeVideo && (
         <VideoModal isOpen={!!activeVideo} onClose={() => setActiveVideo(null)} title={activeVideo.title} youtubeId={activeVideo.id} />
       )}
+
+      <AnimatePresence>
+        {openEbook && (
+          <EbookReader book={openEbook.book} digital={openEbook.digital} onClose={() => setOpenEbook(null)} />
+        )}
+      </AnimatePresence>
 
       {selectedArticle && (
         <Modal isOpen={!!selectedArticle} onClose={() => setSelectedArticle(null)} title={bt(selectedArticle.title)} size="lg">

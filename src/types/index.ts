@@ -160,6 +160,45 @@ export interface BookResource {
   type: 'textbook' | 'practice' | 'vocabulary' | 'official' | 'grammar';
   publisher?: string;
   link?: string;
+  softCopyId?: string;
+}
+
+export type DigitalSectionType = 'text' | 'exercise' | 'vocabulary' | 'sample' | 'tip' | 'checklist';
+
+export interface DigitalVocabItem {
+  word: string;
+  pos: string;
+  definition: BilingualText;
+  example: BilingualText;
+}
+
+export interface DigitalExercise {
+  question: BilingualText;
+  answer: BilingualText;
+}
+
+export interface DigitalSection {
+  id: string;
+  title: BilingualText;
+  type: DigitalSectionType;
+  content: BilingualText;
+  vocabulary?: DigitalVocabItem[];
+  exercises?: DigitalExercise[];
+}
+
+export interface DigitalChapter {
+  id: string;
+  number: number;
+  title: BilingualText;
+  sections: DigitalSection[];
+}
+
+export interface DigitalBook {
+  id: string;
+  bookId: string;
+  coverGradient: string;
+  pageEstimate: number;
+  chapters: DigitalChapter[];
 }
 
 export interface WebResource {

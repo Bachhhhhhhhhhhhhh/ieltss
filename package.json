@@ -11,7 +11,8 @@
     "preview": "vite preview",
     "scrape:videos": "node scripts/scrape-youtube.mjs",
     "gen:resources": "node scripts/gen-resources.mjs",
-    "gen:ielts-content": "node scripts/gen-ielts-content.mjs"
+    "gen:ielts-content": "node scripts/gen-ielts-content.mjs",
+    "gen:digital-books": "node scripts/gen-digital-books.mjs"
   },
   "dependencies": {
     "canvas-confetti": "^1.9.4",
