@@ -1,0 +1,3259 @@
+import type { VocabWord } from '../types';
+
+export const vocabulary: VocabWord[] = [
+  {
+    "id": "vocab-1",
+    "word": "alleviate",
+    "phonetic": "/alleviate/",
+    "meaning": {
+      "en": "to make pain or difficulty less severe",
+      "vi": "làm giảm bớt, làm dịu đi"
+    },
+    "example": {
+      "en": "Governments must alleviate poverty through targeted welfare programmes.",
+      "vi": "Chính phủ phải giảm nghèo qua các chương trình phúc lợi mục tiêu."
+    },
+    "category": "Education",
+    "difficulty": "easy"
+  },
+  {
+    "id": "vocab-2",
+    "word": "ambiguous",
+    "phonetic": "/ambiguous/",
+    "meaning": {
+      "en": "having more than one possible meaning; unclear",
+      "vi": "mơ hồ, không rõ ràng"
+    },
+    "example": {
+      "en": "The survey question was ambiguous and produced unreliable results.",
+      "vi": "Câu hỏi khảo sát mơ hồ nên cho kết quả không đáng tin."
+    },
+    "category": "Environment",
+    "difficulty": "medium"
+  },
+  {
+    "id": "vocab-3",
+    "word": "analogy",
+    "phonetic": "/analogy/",
+    "meaning": {
+      "en": "a comparison between similar things",
+      "vi": "phép so sánh tương tự"
+    },
+    "example": {
+      "en": "She used an analogy between a garden and education to explain growth.",
+      "vi": "Cô ấy dùng phép so sánh giữa khu vườn và giáo dục để giải thích sự phát triển."
+    },
+    "category": "Technology",
+    "difficulty": "hard"
+  },
+  {
+    "id": "vocab-4",
+    "word": "anticipate",
+    "phonetic": "/anticipate/",
+    "meaning": {
+      "en": "to expect or prepare for something in advance",
+      "vi": "dự đoán, chuẩn bị trước"
+    },
+    "example": {
+      "en": "Universities anticipate a surge in international applications.",
+      "vi": "Các trường đại học dự đoán đơn xin từ nước ngoài sẽ tăng mạnh."
+    },
+    "category": "Health",
+    "difficulty": "easy"
+  },
+  {
+    "id": "vocab-5",
+    "word": "arbitrary",
+    "phonetic": "/arbitrary/",
+    "meaning": {
+      "en": "based on random choice rather than reason",
+      "vi": "tùy tiện, ngẫu nhiên"
+    },
+    "example": {
+      "en": "Arbitrary deadlines can demotivate students.",
+      "vi": "Hạn chót tùy tiện có thể làm học sinh mất động lực."
+    },
+    "category": "Society",
+    "difficulty": "medium"
+  },
+  {
+    "id": "vocab-6",
+    "word": "assess",
+    "phonetic": "/assess/",
+    "meaning": {
+      "en": "to evaluate or judge the quality of something",
+      "vi": "đánh giá"
+    },
+    "example": {
+      "en": "Examiners assess writing on four criteria.",
+      "vi": "Giám khảo đánh giá bài viết theo bốn tiêu chí."
+    },
+    "category": "Business",
+    "difficulty": "hard"
+  },
+  {
+    "id": "vocab-7",
+    "word": "attribute",
+    "phonetic": "/attribute/",
+    "meaning": {
+      "en": "to regard as caused by; a characteristic",
+      "vi": "cho là do; đặc tính"
+    },
+    "example": {
+      "en": "Researchers attribute the decline to climate change.",
+      "vi": "Nhà nghiên cứu cho rằng sự suy giảm do biến đổi khí hậu."
+    },
+    "category": "Science",
+    "difficulty": "easy"
+  },
+  {
+    "id": "vocab-8",
+    "word": "biodiversity",
+    "phonetic": "/biodiversity/",
+    "meaning": {
+      "en": "variety of plant and animal life in an area",
+      "vi": "đa dạng sinh học"
+    },
+    "example": {
+      "en": "Protecting biodiversity is essential for ecosystem stability.",
+      "vi": "Bảo vệ đa dạng sinh học rất cần cho ổn định hệ sinh thái."
+    },
+    "category": "Culture",
+    "difficulty": "medium"
+  },
+  {
+    "id": "vocab-9",
+    "word": "coherent",
+    "phonetic": "/coherent/",
+    "meaning": {
+      "en": "logical and consistent; easy to understand",
+      "vi": "mạch lạc, thống nhất"
+    },
+    "example": {
+      "en": "A coherent essay presents ideas in a clear sequence.",
+      "vi": "Bài luận mạch lạc trình bày ý theo trình tự rõ ràng."
+    },
+    "category": "Education",
+    "difficulty": "hard"
+  },
+  {
+    "id": "vocab-10",
+    "word": "comprehensive",
+    "phonetic": "/comprehensive/",
+    "meaning": {
+      "en": "complete and including everything necessary",
+      "vi": "toàn diện, đầy đủ"
+    },
+    "example": {
+      "en": "The course offers comprehensive IELTS preparation.",
+      "vi": "Khóa học cung cấp luyện thi IELTS toàn diện."
+    },
+    "category": "Environment",
+    "difficulty": "easy"
+  },
+  {
+    "id": "vocab-11",
+    "word": "conceive",
+    "phonetic": "/conceive/",
+    "meaning": {
+      "en": "to form an idea or plan in the mind",
+      "vi": "hình thành ý tưởng"
+    },
+    "example": {
+      "en": "It is hard to conceive a world without digital communication.",
+      "vi": "Khó hình dung một thế giới không có giao tiếp số."
+    },
+    "category": "Technology",
+    "difficulty": "medium"
+  },
+  {
+    "id": "vocab-12",
+    "word": "consequently",
+    "phonetic": "/consequently/",
+    "meaning": {
+      "en": "as a result; therefore",
+      "vi": "do đó, vì vậy"
+    },
+    "example": {
+      "en": "Funding was cut; consequently, several programmes closed.",
+      "vi": "Kinh phí bị cắt; do đó, nhiều chương trình đóng cửa."
+    },
+    "category": "Health",
+    "difficulty": "hard"
+  },
+  {
+    "id": "vocab-13",
+    "word": "constitute",
+    "phonetic": "/constitute/",
+    "meaning": {
+      "en": "to form or make up something",
+      "vi": "cấu thành, tạo thành"
+    },
+    "example": {
+      "en": "Women constitute nearly half of the workforce.",
+      "vi": "Phụ nữ chiếm gần một nửa lực lượng lao động."
+    },
+    "category": "Society",
+    "difficulty": "easy"
+  },
+  {
+    "id": "vocab-14",
+    "word": "contemporary",
+    "phonetic": "/contemporary/",
+    "meaning": {
+      "en": "belonging to the present time",
+      "vi": "đương đại, hiện đại"
+    },
+    "example": {
+      "en": "Contemporary art often challenges traditional values.",
+      "vi": "Nghệ thuật đương đại thường thách thức giá trị truyền thống."
+    },
+    "category": "Business",
+    "difficulty": "medium"
+  },
+  {
+    "id": "vocab-15",
+    "word": "controversial",
+    "phonetic": "/controversial/",
+    "meaning": {
+      "en": "causing public disagreement",
+      "vi": "gây tranh cãi"
+    },
+    "example": {
+      "en": "Genetic editing remains a controversial topic.",
+      "vi": "Chỉnh sửa gen vẫn là chủ đề gây tranh cãi."
+    },
+    "category": "Science",
+    "difficulty": "hard"
+  },
+  {
+    "id": "vocab-16",
+    "word": "correlate",
+    "phonetic": "/correlate/",
+    "meaning": {
+      "en": "to have a mutual relationship or connection",
+      "vi": "tương quan"
+    },
+    "example": {
+      "en": "Sleep quality correlates strongly with academic performance.",
+      "vi": "Chất lượng giấc ngủ tương quan mạnh với thành tích học tập."
+    },
+    "category": "Culture",
+    "difficulty": "easy"
+  },
+  {
+    "id": "vocab-17",
+    "word": "criteria",
+    "phonetic": "/criteria/",
+    "meaning": {
+      "en": "standards by which something is judged",
+      "vi": "tiêu chí"
+    },
+    "example": {
+      "en": "Candidates are selected based on strict criteria.",
+      "vi": "Ứng viên được chọn theo tiêu chí nghiêm ngặt."
+    },
+    "category": "Education",
+    "difficulty": "medium"
+  },
+  {
+    "id": "vocab-18",
+    "word": "crucial",
+    "phonetic": "/crucial/",
+    "meaning": {
+      "en": "extremely important or necessary",
+      "vi": "then chốt, cực kỳ quan trọng"
+    },
+    "example": {
+      "en": "Vocabulary range is crucial for a high writing band.",
+      "vi": "Vốn từ vựng rất quan trọng để đạt band viết cao."
+    },
+    "category": "Environment",
+    "difficulty": "hard"
+  },
+  {
+    "id": "vocab-19",
+    "word": "cumulative",
+    "phonetic": "/cumulative/",
+    "meaning": {
+      "en": "increasing by successive additions",
+      "vi": "tích lũy"
+    },
+    "example": {
+      "en": "Cumulative practice leads to measurable improvement.",
+      "vi": "Luyện tập tích lũy mang lại tiến bộ rõ rệt."
+    },
+    "category": "Technology",
+    "difficulty": "easy"
+  },
+  {
+    "id": "vocab-20",
+    "word": "deteriorate",
+    "phonetic": "/deteriorate/",
+    "meaning": {
+      "en": "to become progressively worse",
+      "vi": "xuống cấp, xấu đi"
+    },
+    "example": {
+      "en": "Air quality has deteriorated in major cities.",
+      "vi": "Chất lượng không khí ở thành phố lớn đã xấu đi."
+    },
+    "category": "Health",
+    "difficulty": "medium"
+  },
+  {
+    "id": "vocab-21",
+    "word": "diminish",
+    "phonetic": "/diminish/",
+    "meaning": {
+      "en": "to reduce or become less",
+      "vi": "giảm bớt, làm suy yếu"
+    },
+    "example": {
+      "en": "Regular review diminishes the risk of forgetting vocabulary.",
+      "vi": "Ôn tập thường xuyên giảm nguy cơ quên từ vựng."
+    },
+    "category": "Society",
+    "difficulty": "hard"
+  },
+  {
+    "id": "vocab-22",
+    "word": "discriminate",
+    "phonetic": "/discriminate/",
+    "meaning": {
+      "en": "to treat differently; to distinguish",
+      "vi": "phân biệt đối xử; phân biệt"
+    },
+    "example": {
+      "en": "Laws prohibit employers from discriminating by gender.",
+      "vi": "Luật cấm nhà tuyển dụng phân biệt giới tính."
+    },
+    "category": "Business",
+    "difficulty": "easy"
+  },
+  {
+    "id": "vocab-23",
+    "word": "diverse",
+    "phonetic": "/diverse/",
+    "meaning": {
+      "en": "showing great variety",
+      "vi": "đa dạng"
+    },
+    "example": {
+      "en": "A diverse classroom enriches discussion.",
+      "vi": "Lớp học đa dạng làm phong phú thảo luận."
+    },
+    "category": "Science",
+    "difficulty": "medium"
+  },
+  {
+    "id": "vocab-24",
+    "word": "elaborate",
+    "phonetic": "/elaborate/",
+    "meaning": {
+      "en": "detailed and complicated; to expand on",
+      "vi": "tỉ mỉ; trình bày chi tiết"
+    },
+    "example": {
+      "en": "Please elaborate on your main argument with examples.",
+      "vi": "Hãy trình bày chi tiết luận điểm chính bằng ví dụ."
+    },
+    "category": "Culture",
+    "difficulty": "hard"
+  },
+  {
+    "id": "vocab-25",
+    "word": "eliminate",
+    "phonetic": "/eliminate/",
+    "meaning": {
+      "en": "to completely remove or get rid of",
+      "vi": "loại bỏ hoàn toàn"
+    },
+    "example": {
+      "en": "Vaccination programmes helped eliminate certain diseases.",
+      "vi": "Chương trình tiêm chủng giúp loại bỏ một số bệnh."
+    },
+    "category": "Education",
+    "difficulty": "easy"
+  },
+  {
+    "id": "vocab-26",
+    "word": "empirical",
+    "phonetic": "/empirical/",
+    "meaning": {
+      "en": "based on observation or experiment",
+      "vi": "dựa trên thực nghiệm"
+    },
+    "example": {
+      "en": "The theory lacks empirical evidence.",
+      "vi": "Giả thuyết thiếu bằng chứng thực nghiệm."
+    },
+    "category": "Environment",
+    "difficulty": "medium"
+  },
+  {
+    "id": "vocab-27",
+    "word": "enhance",
+    "phonetic": "/enhance/",
+    "meaning": {
+      "en": "to improve the quality or value of",
+      "vi": "nâng cao, cải thiện"
+    },
+    "example": {
+      "en": "Technology can enhance language learning outcomes.",
+      "vi": "Công nghệ có thể nâng cao kết quả học ngoại ngữ."
+    },
+    "category": "Technology",
+    "difficulty": "hard"
+  },
+  {
+    "id": "vocab-28",
+    "word": "equivalent",
+    "phonetic": "/equivalent/",
+    "meaning": {
+      "en": "equal in value, amount, or meaning",
+      "vi": "tương đương"
+    },
+    "example": {
+      "en": "Band 7 is equivalent to C1 on the CEFR scale.",
+      "vi": "Band 7 tương đương C1 trên thang CEFR."
+    },
+    "category": "Health",
+    "difficulty": "easy"
+  },
+  {
+    "id": "vocab-29",
+    "word": "erode",
+    "phonetic": "/erode/",
+    "meaning": {
+      "en": "to gradually wear away or diminish",
+      "vi": "xói mòn, làm suy yếu dần"
+    },
+    "example": {
+      "en": "Constant criticism can erode students' confidence.",
+      "vi": "Chỉ trích liên tục có thể làm suy yếu tự tin học sinh."
+    },
+    "category": "Society",
+    "difficulty": "medium"
+  },
+  {
+    "id": "vocab-30",
+    "word": "exacerbate",
+    "phonetic": "/exacerbate/",
+    "meaning": {
+      "en": "to make a problem worse",
+      "vi": "làm trầm trọng thêm"
+    },
+    "example": {
+      "en": "Poor planning exacerbated the housing shortage.",
+      "vi": "Quy hoạch kém làm trầm trọng thêm thiếu nhà ở."
+    },
+    "category": "Business",
+    "difficulty": "hard"
+  },
+  {
+    "id": "vocab-31",
+    "word": "facilitate",
+    "phonetic": "/facilitate/",
+    "meaning": {
+      "en": "to make an action easier",
+      "vi": "tạo điều kiện thuận lợi"
+    },
+    "example": {
+      "en": "Online tools facilitate collaborative study.",
+      "vi": "Công cụ trực tuyến tạo điều kiện học nhóm."
+    },
+    "category": "Science",
+    "difficulty": "easy"
+  },
+  {
+    "id": "vocab-32",
+    "word": "fluctuate",
+    "phonetic": "/fluctuate/",
+    "meaning": {
+      "en": "to rise and fall irregularly",
+      "vi": "dao động"
+    },
+    "example": {
+      "en": "Exchange rates fluctuate daily.",
+      "vi": "Tỷ giá dao động hàng ngày."
+    },
+    "category": "Culture",
+    "difficulty": "medium"
+  },
+  {
+    "id": "vocab-33",
+    "word": "fundamental",
+    "phonetic": "/fundamental/",
+    "meaning": {
+      "en": "forming a necessary base; essential",
+      "vi": "cơ bản, nền tảng"
+    },
+    "example": {
+      "en": "Grammar is fundamental to clear communication.",
+      "vi": "Ngữ pháp là nền tảng của giao tiếp rõ ràng."
+    },
+    "category": "Education",
+    "difficulty": "hard"
+  },
+  {
+    "id": "vocab-34",
+    "word": "hypothesis",
+    "phonetic": "/hypothesis/",
+    "meaning": {
+      "en": "a proposed explanation to be tested",
+      "vi": "giả thuyết"
+    },
+    "example": {
+      "en": "The study tests the hypothesis that sleep affects memory.",
+      "vi": "Nghiên cứu kiểm chứng giả thuyết giấc ngủ ảnh hưởng trí nhớ."
+    },
+    "category": "Environment",
+    "difficulty": "easy"
+  },
+  {
+    "id": "vocab-35",
+    "word": "implement",
+    "phonetic": "/implement/",
+    "meaning": {
+      "en": "to put a plan into action",
+      "vi": "triển khai, thực hiện"
+    },
+    "example": {
+      "en": "Schools will implement the new curriculum next year.",
+      "vi": "Trường học sẽ triển khai chương trình mới năm sau."
+    },
+    "category": "Technology",
+    "difficulty": "medium"
+  },
+  {
+    "id": "vocab-36",
+    "word": "implication",
+    "phonetic": "/implication/",
+    "meaning": {
+      "en": "a possible effect or consequence",
+      "vi": "hàm ý, hệ quả"
+    },
+    "example": {
+      "en": "The policy has serious implications for rural communities.",
+      "vi": "Chính sách có hệ quả nghiêm trọng với cộng đồng nông thôn."
+    },
+    "category": "Health",
+    "difficulty": "hard"
+  },
+  {
+    "id": "vocab-37",
+    "word": "incentive",
+    "phonetic": "/incentive/",
+    "meaning": {
+      "en": "something that motivates action",
+      "vi": "động lực, khuyến khích"
+    },
+    "example": {
+      "en": "Scholarships provide a strong incentive to study abroad.",
+      "vi": "Học bổng tạo động lực mạnh để du học."
+    },
+    "category": "Society",
+    "difficulty": "easy"
+  },
+  {
+    "id": "vocab-38",
+    "word": "inevitable",
+    "phonetic": "/inevitable/",
+    "meaning": {
+      "en": "certain to happen; unavoidable",
+      "vi": "không thể tránh khỏi"
+    },
+    "example": {
+      "en": "Technological change is inevitable in modern society.",
+      "vi": "Thay đổi công nghệ là không thể tránh trong xã hội hiện đại."
+    },
+    "category": "Business",
+    "difficulty": "medium"
+  },
+  {
+    "id": "vocab-39",
+    "word": "infrastructure",
+    "phonetic": "/infrastructure/",
+    "meaning": {
+      "en": "basic physical systems of a country",
+      "vi": "cơ sở hạ tầng"
+    },
+    "example": {
+      "en": "Investment in infrastructure boosts economic growth.",
+      "vi": "Đầu tư hạ tầng thúc đẩy tăng trưởng kinh tế."
+    },
+    "category": "Science",
+    "difficulty": "hard"
+  },
+  {
+    "id": "vocab-40",
+    "word": "inherent",
+    "phonetic": "/inherent/",
+    "meaning": {
+      "en": "existing as a natural part of something",
+      "vi": "vốn có, cố hữu"
+    },
+    "example": {
+      "en": "There are inherent risks in any medical procedure.",
+      "vi": "Mọi thủ thuật y khoa đều có rủi ro vốn có."
+    },
+    "category": "Culture",
+    "difficulty": "easy"
+  },
+  {
+    "id": "vocab-41",
+    "word": "innovative",
+    "phonetic": "/innovative/",
+    "meaning": {
+      "en": "featuring new methods or ideas",
+      "vi": "đổi mới, sáng tạo"
+    },
+    "example": {
+      "en": "Innovative teaching methods engage students more effectively.",
+      "vi": "Phương pháp giảng dạy đổi mới thu hút học sinh hiệu quả hơn."
+    },
+    "category": "Education",
+    "difficulty": "medium"
+  },
+  {
+    "id": "vocab-42",
+    "word": "integrate",
+    "phonetic": "/integrate/",
+    "meaning": {
+      "en": "to combine into a unified whole",
+      "vi": "tích hợp"
+    },
+    "example": {
+      "en": "Schools integrate technology into daily lessons.",
+      "vi": "Trường học tích hợp công nghệ vào bài học hàng ngày."
+    },
+    "category": "Environment",
+    "difficulty": "hard"
+  },
+  {
+    "id": "vocab-43",
+    "word": "intervene",
+    "phonetic": "/intervene/",
+    "meaning": {
+      "en": "to become involved to alter a situation",
+      "vi": "can thiệp"
+    },
+    "example": {
+      "en": "Governments may intervene when markets fail.",
+      "vi": "Chính phủ có thể can thiệp khi thị trường thất bại."
+    },
+    "category": "Technology",
+    "difficulty": "easy"
+  },
+  {
+    "id": "vocab-44",
+    "word": "legislation",
+    "phonetic": "/legislation/",
+    "meaning": {
+      "en": "laws considered collectively",
+      "vi": "pháp luật, luật pháp"
+    },
+    "example": {
+      "en": "New legislation protects consumer data online.",
+      "vi": "Luật mới bảo vệ dữ liệu người tiêu dùng trực tuyến."
+    },
+    "category": "Health",
+    "difficulty": "medium"
+  },
+  {
+    "id": "vocab-45",
+    "word": "mitigate",
+    "phonetic": "/mitigate/",
+    "meaning": {
+      "en": "to make something less severe",
+      "vi": "giảm nhẹ, làm dịu"
+    },
+    "example": {
+      "en": "Trees mitigate the effects of urban heat.",
+      "vi": "Cây xanh giảm nhẹ tác động nhiệt đô thị."
+    },
+    "category": "Society",
+    "difficulty": "hard"
+  },
+  {
+    "id": "vocab-46",
+    "word": "notion",
+    "phonetic": "/notion/",
+    "meaning": {
+      "en": "a general idea or belief",
+      "vi": "quan niệm, ý niệm"
+    },
+    "example": {
+      "en": "The notion of lifelong learning is widely accepted.",
+      "vi": "Quan niệm học suốt đời được chấp nhận rộng rãi."
+    },
+    "category": "Business",
+    "difficulty": "easy"
+  },
+  {
+    "id": "vocab-47",
+    "word": "obsolete",
+    "phonetic": "/obsolete/",
+    "meaning": {
+      "en": "no longer in use; outdated",
+      "vi": "lỗi thời"
+    },
+    "example": {
+      "en": "Some skills become obsolete as technology advances.",
+      "vi": "Một số kỹ năng lỗi thời khi công nghệ tiến bộ."
+    },
+    "category": "Science",
+    "difficulty": "medium"
+  },
+  {
+    "id": "vocab-48",
+    "word": "paradigm",
+    "phonetic": "/paradigm/",
+    "meaning": {
+      "en": "a typical pattern or model",
+      "vi": "mô hình, khuôn mẫu"
+    },
+    "example": {
+      "en": "Remote work shifted the paradigm of office culture.",
+      "vi": "Làm việc từ xa thay đổi mô hình văn hóa văn phòng."
+    },
+    "category": "Culture",
+    "difficulty": "hard"
+  },
+  {
+    "id": "vocab-49",
+    "word": "phenomenon",
+    "phonetic": "/phenomenon/",
+    "meaning": {
+      "en": "a fact or event that is observed",
+      "vi": "hiện tượng"
+    },
+    "example": {
+      "en": "Urbanisation is a global phenomenon.",
+      "vi": "Đô thị hóa là hiện tượng toàn cầu."
+    },
+    "category": "Education",
+    "difficulty": "easy"
+  },
+  {
+    "id": "vocab-50",
+    "word": "sustainability",
+    "phonetic": "/sustainability/",
+    "meaning": {
+      "en": "ability to be maintained without depleting resources",
+      "vi": "bền vững"
+    },
+    "example": {
+      "en": "Sustainability requires balancing growth and conservation.",
+      "vi": "Bền vững đòi hỏi cân bằng tăng trưởng và bảo tồn."
+    },
+    "category": "Environment",
+    "difficulty": "medium"
+  },
+  {
+    "id": "vocab-51",
+    "word": "proliferation",
+    "phonetic": "/proliferation/",
+    "meaning": {
+      "en": "rapid increase in numbers",
+      "vi": "sự gia tăng nhanh"
+    },
+    "example": {
+      "en": "The proliferation of smartphones changed communication.",
+      "vi": "Sự bùng nổ smartphone thay đổi giao tiếp."
+    },
+    "category": "Technology",
+    "difficulty": "hard"
+  },
+  {
+    "id": "vocab-52",
+    "word": "detrimental",
+    "phonetic": "/detrimental/",
+    "meaning": {
+      "en": "causing harm or damage",
+      "vi": "có hại"
+    },
+    "example": {
+      "en": "Excessive screen time can be detrimental to sleep.",
+      "vi": "Dùng màn hình quá nhiều có hại cho giấc ngủ."
+    },
+    "category": "Health",
+    "difficulty": "easy"
+  },
+  {
+    "id": "vocab-53",
+    "word": "subsequently",
+    "phonetic": "/subsequently/",
+    "meaning": {
+      "en": "afterwards; following in time",
+      "vi": "sau đó"
+    },
+    "example": {
+      "en": "He graduated and subsequently pursued a master's degree.",
+      "vi": "Anh ấy tốt nghiệp và sau đó học thạc sĩ."
+    },
+    "category": "Society",
+    "difficulty": "medium"
+  },
+  {
+    "id": "vocab-54",
+    "word": "predominantly",
+    "phonetic": "/predominantly/",
+    "meaning": {
+      "en": "mainly; for the most part",
+      "vi": "chủ yếu"
+    },
+    "example": {
+      "en": "The audience was predominantly young professionals.",
+      "vi": "Khán giả chủ yếu là chuyên gia trẻ."
+    },
+    "category": "Business",
+    "difficulty": "hard"
+  },
+  {
+    "id": "vocab-55",
+    "word": "unprecedented",
+    "phonetic": "/unprecedented/",
+    "meaning": {
+      "en": "never done or known before",
+      "vi": "chưa từng có"
+    },
+    "example": {
+      "en": "The pandemic caused unprecedented disruption to education.",
+      "vi": "Đại dịch gây gián đoạn giáo dục chưa từng có."
+    },
+    "category": "Science",
+    "difficulty": "easy"
+  },
+  {
+    "id": "vocab-56",
+    "word": "paramount",
+    "phonetic": "/paramount/",
+    "meaning": {
+      "en": "more important than anything else",
+      "vi": "tối quan trọng"
+    },
+    "example": {
+      "en": "Student safety is of paramount importance.",
+      "vi": "An toàn học sinh là tối quan trọng."
+    },
+    "category": "Culture",
+    "difficulty": "medium"
+  },
+  {
+    "id": "vocab-57",
+    "word": "quintessential",
+    "phonetic": "/quintessential/",
+    "meaning": {
+      "en": "representing the most perfect example",
+      "vi": "tiêu biểu nhất"
+    },
+    "example": {
+      "en": "She is the quintessential dedicated teacher.",
+      "vi": "Cô ấy là hình mẫu tiêu biểu của giáo viên tận tâm."
+    },
+    "category": "Education",
+    "difficulty": "hard"
+  },
+  {
+    "id": "vocab-58",
+    "word": "ramification",
+    "phonetic": "/ramification/",
+    "meaning": {
+      "en": "a complex consequence of an action",
+      "vi": "hệ quả phức tạp"
+    },
+    "example": {
+      "en": "Policy changes have far-reaching ramifications.",
+      "vi": "Thay đổi chính sách có hệ quả sâu rộng."
+    },
+    "category": "Environment",
+    "difficulty": "easy"
+  },
+  {
+    "id": "vocab-59",
+    "word": "repercussion",
+    "phonetic": "/repercussion/",
+    "meaning": {
+      "en": "an unintended consequence",
+      "vi": "hậu quả"
+    },
+    "example": {
+      "en": "Economic sanctions may have global repercussions.",
+      "vi": "Trừng phạt kinh tế có thể gây hậu quả toàn cầu."
+    },
+    "category": "Technology",
+    "difficulty": "medium"
+  },
+  {
+    "id": "vocab-60",
+    "word": "scrutinize",
+    "phonetic": "/scrutinize/",
+    "meaning": {
+      "en": "to examine closely and critically",
+      "vi": "xem xét kỹ lưỡng"
+    },
+    "example": {
+      "en": "Auditors scrutinize financial records each quarter.",
+      "vi": "Kiểm toán viên xem xét kỹ sổ sách mỗi quý."
+    },
+    "category": "Health",
+    "difficulty": "hard"
+  },
+  {
+    "id": "vocab-61",
+    "word": "substantiate",
+    "phonetic": "/substantiate/",
+    "meaning": {
+      "en": "to provide evidence to support",
+      "vi": "chứng minh, bổ sung bằng chứng"
+    },
+    "example": {
+      "en": "Claims must be substantiated with reliable data.",
+      "vi": "Tuyên bố phải được chứng minh bằng dữ liệu đáng tin."
+    },
+    "category": "Society",
+    "difficulty": "easy"
+  },
+  {
+    "id": "vocab-62",
+    "word": "surpass",
+    "phonetic": "/surpass/",
+    "meaning": {
+      "en": "to exceed or go beyond",
+      "vi": "vượt qua"
+    },
+    "example": {
+      "en": "Her score surpassed the national average.",
+      "vi": "Điểm của cô ấy vượt mức trung bình quốc gia."
+    },
+    "category": "Business",
+    "difficulty": "medium"
+  },
+  {
+    "id": "vocab-63",
+    "word": "tangible",
+    "phonetic": "/tangible/",
+    "meaning": {
+      "en": "clear and definite; perceptible",
+      "vi": "hữu hình, rõ ràng"
+    },
+    "example": {
+      "en": "Students need tangible feedback on their writing.",
+      "vi": "Học sinh cần phản hồi rõ ràng về bài viết."
+    },
+    "category": "Science",
+    "difficulty": "hard"
+  },
+  {
+    "id": "vocab-64",
+    "word": "tenacious",
+    "phonetic": "/tenacious/",
+    "meaning": {
+      "en": "persistent and determined",
+      "vi": "kiên trì, bền bỉ"
+    },
+    "example": {
+      "en": "Tenacious learners eventually reach their target band.",
+      "vi": "Người học kiên trì cuối cùng đạt band mục tiêu."
+    },
+    "category": "Culture",
+    "difficulty": "easy"
+  },
+  {
+    "id": "vocab-65",
+    "word": "transient",
+    "phonetic": "/transient/",
+    "meaning": {
+      "en": "lasting only for a short time",
+      "vi": "tạm thời, thoáng qua"
+    },
+    "example": {
+      "en": "Economic booms are often transient.",
+      "vi": "Bùng nổ kinh tế thường chỉ tạm thời."
+    },
+    "category": "Education",
+    "difficulty": "medium"
+  },
+  {
+    "id": "vocab-66",
+    "word": "undermine",
+    "phonetic": "/undermine/",
+    "meaning": {
+      "en": "to weaken gradually",
+      "vi": "làm suy yếu"
+    },
+    "example": {
+      "en": "Misinformation can undermine public trust.",
+      "vi": "Thông tin sai lệch có thể làm suy yếu niềm tin công chúng."
+    },
+    "category": "Environment",
+    "difficulty": "hard"
+  },
+  {
+    "id": "vocab-67",
+    "word": "validate",
+    "phonetic": "/validate/",
+    "meaning": {
+      "en": "to confirm the accuracy of",
+      "vi": "xác nhận, chứng thực"
+    },
+    "example": {
+      "en": "Further studies are needed to validate the findings.",
+      "vi": "Cần thêm nghiên cứu để xác nhận kết quả."
+    },
+    "category": "Technology",
+    "difficulty": "easy"
+  },
+  {
+    "id": "vocab-68",
+    "word": "versatile",
+    "phonetic": "/versatile/",
+    "meaning": {
+      "en": "able to adapt to many functions",
+      "vi": "linh hoạt, đa năng"
+    },
+    "example": {
+      "en": "English is a versatile tool for global careers.",
+      "vi": "Tiếng Anh là công cụ linh hoạt cho sự nghiệp toàn cầu."
+    },
+    "category": "Health",
+    "difficulty": "medium"
+  },
+  {
+    "id": "vocab-69",
+    "word": "viable",
+    "phonetic": "/viable/",
+    "meaning": {
+      "en": "capable of working successfully",
+      "vi": "khả thi"
+    },
+    "example": {
+      "en": "Solar power is now a viable energy source.",
+      "vi": "Điện mặt trời giờ là nguồn năng lượng khả thi."
+    },
+    "category": "Society",
+    "difficulty": "hard"
+  },
+  {
+    "id": "vocab-70",
+    "word": "volatile",
+    "phonetic": "/volatile/",
+    "meaning": {
+      "en": "likely to change suddenly",
+      "vi": "biến động mạnh"
+    },
+    "example": {
+      "en": "Oil prices remain volatile.",
+      "vi": "Giá dầu vẫn biến động mạnh."
+    },
+    "category": "Business",
+    "difficulty": "easy"
+  },
+  {
+    "id": "vocab-71",
+    "word": "widespread",
+    "phonetic": "/widespread/",
+    "meaning": {
+      "en": "found or happening over a large area",
+      "vi": "phổ biến rộng rãi"
+    },
+    "example": {
+      "en": "There is widespread support for renewable energy.",
+      "vi": "Năng lượng tái tạo được ủng hộ rộng rãi."
+    },
+    "category": "Science",
+    "difficulty": "medium"
+  },
+  {
+    "id": "vocab-72",
+    "word": "advocate",
+    "phonetic": "/advocate/",
+    "meaning": {
+      "en": "to publicly support; a supporter",
+      "vi": "ủng hộ; người ủng hộ"
+    },
+    "example": {
+      "en": "Many educators advocate bilingual instruction.",
+      "vi": "Nhiều nhà giáo dục ủng hộ giảng dạy song ngữ."
+    },
+    "category": "Culture",
+    "difficulty": "hard"
+  },
+  {
+    "id": "vocab-73",
+    "word": "allocate",
+    "phonetic": "/allocate/",
+    "meaning": {
+      "en": "to distribute for a specific purpose",
+      "vi": "phân bổ"
+    },
+    "example": {
+      "en": "The budget allocates funds to rural schools.",
+      "vi": "Ngân sách phân bổ kinh phí cho trường nông thôn."
+    },
+    "category": "Education",
+    "difficulty": "easy"
+  },
+  {
+    "id": "vocab-74",
+    "word": "anomaly",
+    "phonetic": "/anomaly/",
+    "meaning": {
+      "en": "something that deviates from the norm",
+      "vi": "bất thường, dị thường"
+    },
+    "example": {
+      "en": "The result was an anomaly that required further study.",
+      "vi": "Kết quả là bất thường cần nghiên cứu thêm."
+    },
+    "category": "Environment",
+    "difficulty": "medium"
+  },
+  {
+    "id": "vocab-75",
+    "word": "autonomous",
+    "phonetic": "/autonomous/",
+    "meaning": {
+      "en": "self-governing; independent",
+      "vi": "tự trị, tự chủ"
+    },
+    "example": {
+      "en": "Autonomous vehicles may transform urban transport.",
+      "vi": "Xe tự lái có thể thay đổi giao thông đô thị."
+    },
+    "category": "Technology",
+    "difficulty": "hard"
+  },
+  {
+    "id": "vocab-76",
+    "word": "benchmark",
+    "phonetic": "/benchmark/",
+    "meaning": {
+      "en": "a standard for comparison",
+      "vi": "chuẩn mực, tiêu chuẩn"
+    },
+    "example": {
+      "en": "Band 7 serves as a benchmark for university admission.",
+      "vi": "Band 7 là chuẩn mực tuyển sinh đại học."
+    },
+    "category": "Health",
+    "difficulty": "easy"
+  },
+  {
+    "id": "vocab-77",
+    "word": "bolster",
+    "phonetic": "/bolster/",
+    "meaning": {
+      "en": "to support or strengthen",
+      "vi": "củng cố, tăng cường"
+    },
+    "example": {
+      "en": "Practice tests bolster exam confidence.",
+      "vi": "Thi thử củng cố tự tin trước kỳ thi."
+    },
+    "category": "Society",
+    "difficulty": "medium"
+  },
+  {
+    "id": "vocab-78",
+    "word": "burgeoning",
+    "phonetic": "/burgeoning/",
+    "meaning": {
+      "en": "growing or developing rapidly",
+      "vi": "đang phát triển nhanh"
+    },
+    "example": {
+      "en": "The burgeoning ed-tech sector attracts investment.",
+      "vi": "Ngành ed-tech đang bùng nổ thu hút đầu tư."
+    },
+    "category": "Business",
+    "difficulty": "hard"
+  },
+  {
+    "id": "vocab-79",
+    "word": "catalyst",
+    "phonetic": "/catalyst/",
+    "meaning": {
+      "en": "something that speeds up change",
+      "vi": "chất xúc tác, yếu tố thúc đẩy"
+    },
+    "example": {
+      "en": "IELTS can be a catalyst for international opportunities.",
+      "vi": "IELTS có thể là động lực mở cơ hội quốc tế."
+    },
+    "category": "Science",
+    "difficulty": "easy"
+  },
+  {
+    "id": "vocab-80",
+    "word": "circumvent",
+    "phonetic": "/circumvent/",
+    "meaning": {
+      "en": "to find a way around an obstacle",
+      "vi": "lách luật, tránh né"
+    },
+    "example": {
+      "en": "Students should not circumvent academic integrity rules.",
+      "vi": "Học sinh không nên lách quy tắc trung thực học thuật."
+    },
+    "category": "Culture",
+    "difficulty": "medium"
+  },
+  {
+    "id": "vocab-81",
+    "word": "coalesce",
+    "phonetic": "/coalesce/",
+    "meaning": {
+      "en": "to come together to form one mass",
+      "vi": "hợp nhất, kết hợp"
+    },
+    "example": {
+      "en": "Diverse ideas coalesce into a coherent argument.",
+      "vi": "Ý tưởng đa dạng hợp nhất thành luận điểm mạch lạc."
+    },
+    "category": "Education",
+    "difficulty": "hard"
+  },
+  {
+    "id": "vocab-82",
+    "word": "commensurate",
+    "phonetic": "/commensurate/",
+    "meaning": {
+      "en": "corresponding in size or degree",
+      "vi": "tương xứng"
+    },
+    "example": {
+      "en": "Salary should be commensurate with experience.",
+      "vi": "Lương nên tương xứng với kinh nghiệm."
+    },
+    "category": "Environment",
+    "difficulty": "easy"
+  },
+  {
+    "id": "vocab-83",
+    "word": "compelling",
+    "phonetic": "/compelling/",
+    "meaning": {
+      "en": "evoking interest; convincing",
+      "vi": "thuyết phục, hấp dẫn"
+    },
+    "example": {
+      "en": "She presented a compelling case for reform.",
+      "vi": "Cô ấy trình bày lập luận thuyết phục về cải cách."
+    },
+    "category": "Technology",
+    "difficulty": "medium"
+  },
+  {
+    "id": "vocab-84",
+    "word": "conducive",
+    "phonetic": "/conducive/",
+    "meaning": {
+      "en": "making a situation likely to happen",
+      "vi": "có lợi cho, tạo điều kiện"
+    },
+    "example": {
+      "en": "A quiet library is conducive to focused study.",
+      "vi": "Thư viện yên tĩnh tạo điều kiện học tập tập trung."
+    },
+    "category": "Health",
+    "difficulty": "hard"
+  },
+  {
+    "id": "vocab-85",
+    "word": "conjecture",
+    "phonetic": "/conjecture/",
+    "meaning": {
+      "en": "an opinion without sufficient evidence",
+      "vi": "phỏng đoán"
+    },
+    "example": {
+      "en": "Without data, the claim remains mere conjecture.",
+      "vi": "Không có dữ liệu, tuyên bố chỉ là phỏng đoán."
+    },
+    "category": "Society",
+    "difficulty": "easy"
+  },
+  {
+    "id": "vocab-86",
+    "word": "consolidate",
+    "phonetic": "/consolidate/",
+    "meaning": {
+      "en": "to strengthen or combine",
+      "vi": "củng cố, hợp nhất"
+    },
+    "example": {
+      "en": "Review sessions help consolidate grammar knowledge.",
+      "vi": "Buổi ôn tập giúp củng cố kiến thức ngữ pháp."
+    },
+    "category": "Business",
+    "difficulty": "medium"
+  },
+  {
+    "id": "vocab-87",
+    "word": "converge",
+    "phonetic": "/converge/",
+    "meaning": {
+      "en": "to come together from different directions",
+      "vi": "hội tụ"
+    },
+    "example": {
+      "en": "Global trends converge on digital education.",
+      "vi": "Xu hướng toàn cầu hội tụ về giáo dục số."
+    },
+    "category": "Science",
+    "difficulty": "hard"
+  },
+  {
+    "id": "vocab-88",
+    "word": "corroborate",
+    "phonetic": "/corroborate/",
+    "meaning": {
+      "en": "to confirm with supporting evidence",
+      "vi": "xác nhận, chứng thực"
+    },
+    "example": {
+      "en": "Two studies corroborate the same conclusion.",
+      "vi": "Hai nghiên cứu xác nhận cùng kết luận."
+    },
+    "category": "Culture",
+    "difficulty": "easy"
+  },
+  {
+    "id": "vocab-89",
+    "word": "culminate",
+    "phonetic": "/culminate/",
+    "meaning": {
+      "en": "to reach a climax or conclusion",
+      "vi": "đạt đỉnh điểm, kết thúc"
+    },
+    "example": {
+      "en": "Years of practice culminated in her Band 8 score.",
+      "vi": "Nhiều năm luyện tập đạt đỉnh với Band 8."
+    },
+    "category": "Education",
+    "difficulty": "medium"
+  },
+  {
+    "id": "vocab-90",
+    "word": "cumbersome",
+    "phonetic": "/cumbersome/",
+    "meaning": {
+      "en": "large and difficult to handle",
+      "vi": "cồng kềnh, phiền phức"
+    },
+    "example": {
+      "en": "Cumbersome procedures delay project approval.",
+      "vi": "Thủ tục cồng kềnh trì hoãn phê duyệt dự án."
+    },
+    "category": "Environment",
+    "difficulty": "hard"
+  },
+  {
+    "id": "vocab-91",
+    "word": "debilitate",
+    "phonetic": "/debilitate/",
+    "meaning": {
+      "en": "to make weak or infirm",
+      "vi": "làm suy yếu"
+    },
+    "example": {
+      "en": "Chronic stress can debilitate immune function.",
+      "vi": "Căng thẳng mãn tính làm suy yếu miễn dịch."
+    },
+    "category": "Technology",
+    "difficulty": "easy"
+  },
+  {
+    "id": "vocab-92",
+    "word": "decipher",
+    "phonetic": "/decipher/",
+    "meaning": {
+      "en": "to convert into understandable form",
+      "vi": "giải mã, đọc hiểu"
+    },
+    "example": {
+      "en": "Students must decipher complex academic texts.",
+      "vi": "Học sinh phải đọc hiểu văn bản học thuật phức tạp."
+    },
+    "category": "Health",
+    "difficulty": "medium"
+  },
+  {
+    "id": "vocab-93",
+    "word": "deplete",
+    "phonetic": "/deplete/",
+    "meaning": {
+      "en": "to use up resources",
+      "vi": "cạn kiệt"
+    },
+    "example": {
+      "en": "Overfishing depletes marine stocks.",
+      "vi": "Đánh bắt quá mức cạn kiệt nguồn cá biển."
+    },
+    "category": "Society",
+    "difficulty": "hard"
+  },
+  {
+    "id": "vocab-94",
+    "word": "depreciate",
+    "phonetic": "/depreciate/",
+    "meaning": {
+      "en": "to decrease in value",
+      "vi": "mất giá"
+    },
+    "example": {
+      "en": "Currency may depreciate during economic crises.",
+      "vi": "Tiền tệ có thể mất giá trong khủng hoảng."
+    },
+    "category": "Business",
+    "difficulty": "easy"
+  },
+  {
+    "id": "vocab-95",
+    "word": "deterrent",
+    "phonetic": "/deterrent/",
+    "meaning": {
+      "en": "something that discourages action",
+      "vi": "rào cản, yếu tố răn đe"
+    },
+    "example": {
+      "en": "High fees act as a deterrent to some applicants.",
+      "vi": "Học phí cao là rào cản với một số ứng viên."
+    },
+    "category": "Science",
+    "difficulty": "medium"
+  },
+  {
+    "id": "vocab-96",
+    "word": "discrepancy",
+    "phonetic": "/discrepancy/",
+    "meaning": {
+      "en": "a lack of agreement between facts",
+      "vi": "sự khác biệt, mâu thuẫn"
+    },
+    "example": {
+      "en": "There is a discrepancy between the two reports.",
+      "vi": "Hai báo cáo có sự khác biệt."
+    },
+    "category": "Culture",
+    "difficulty": "hard"
+  },
+  {
+    "id": "vocab-97",
+    "word": "disseminate",
+    "phonetic": "/disseminate/",
+    "meaning": {
+      "en": "to spread widely",
+      "vi": "phổ biến, truyền bá"
+    },
+    "example": {
+      "en": "Universities disseminate research through journals.",
+      "vi": "Đại học phổ biến nghiên cứu qua tạp chí."
+    },
+    "category": "Education",
+    "difficulty": "easy"
+  },
+  {
+    "id": "vocab-98",
+    "word": "diverge",
+    "phonetic": "/diverge/",
+    "meaning": {
+      "en": "to separate and go in different directions",
+      "vi": "phân kỳ, đi theo hướng khác"
+    },
+    "example": {
+      "en": "Opinions diverge on the best teaching method.",
+      "vi": "Ý kiến phân kỳ về phương pháp giảng dạy tốt nhất."
+    },
+    "category": "Environment",
+    "difficulty": "medium"
+  },
+  {
+    "id": "vocab-99",
+    "word": "elicit",
+    "phonetic": "/elicit/",
+    "meaning": {
+      "en": "to draw out a response",
+      "vi": "gợi ra, khơi gợi"
+    },
+    "example": {
+      "en": "Good questions elicit thoughtful answers.",
+      "vi": "Câu hỏi hay gợi ra câu trả lời sâu sắc."
+    },
+    "category": "Technology",
+    "difficulty": "hard"
+  },
+  {
+    "id": "vocab-100",
+    "word": "emulate",
+    "phonetic": "/emulate/",
+    "meaning": {
+      "en": "to imitate with effort to equal",
+      "vi": "noi gương, bắt chước"
+    },
+    "example": {
+      "en": "Learners emulate native speakers' intonation.",
+      "vi": "Người học bắt chước ngữ điệu người bản ngữ."
+    },
+    "category": "Health",
+    "difficulty": "easy"
+  },
+  {
+    "id": "vocab-101",
+    "word": "endeavor",
+    "phonetic": "/endeavor/",
+    "meaning": {
+      "en": "a serious effort; to try hard",
+      "vi": "nỗ lực"
+    },
+    "example": {
+      "en": "Mastering IELTS is a worthwhile endeavor.",
+      "vi": "Chinh phục IELTS là nỗ lực đáng giá."
+    },
+    "category": "Society",
+    "difficulty": "medium"
+  },
+  {
+    "id": "vocab-102",
+    "word": "engender",
+    "phonetic": "/engender/",
+    "meaning": {
+      "en": "to cause a feeling to exist",
+      "vi": "gây ra, tạo ra"
+    },
+    "example": {
+      "en": "Fair grading engenders trust in the system.",
+      "vi": "Chấm điểm công bằng tạo niềm tin vào hệ thống."
+    },
+    "category": "Business",
+    "difficulty": "hard"
+  },
+  {
+    "id": "vocab-103",
+    "word": "envisage",
+    "phonetic": "/envisage/",
+    "meaning": {
+      "en": "to imagine as a future possibility",
+      "vi": "hình dung"
+    },
+    "example": {
+      "en": "It is hard to envisage life without the internet.",
+      "vi": "Khó hình dung cuộc sống không có internet."
+    },
+    "category": "Science",
+    "difficulty": "easy"
+  },
+  {
+    "id": "vocab-104",
+    "word": "epitomize",
+    "phonetic": "/epitomize/",
+    "meaning": {
+      "en": "to be a perfect example of",
+      "vi": "là hình mẫu tiêu biểu"
+    },
+    "example": {
+      "en": "The essay epitomizes clear academic writing.",
+      "vi": "Bài luận là hình mẫu viết học thuật rõ ràng."
+    },
+    "category": "Culture",
+    "difficulty": "medium"
+  },
+  {
+    "id": "vocab-105",
+    "word": "escalate",
+    "phonetic": "/escalate/",
+    "meaning": {
+      "en": "to increase rapidly in intensity",
+      "vi": "leo thang"
+    },
+    "example": {
+      "en": "Tensions escalated after the announcement.",
+      "vi": "Căng thẳng leo thang sau thông báo."
+    },
+    "category": "Education",
+    "difficulty": "hard"
+  },
+  {
+    "id": "vocab-106",
+    "word": "exemplify",
+    "phonetic": "/exemplify/",
+    "meaning": {
+      "en": "to be a typical example of",
+      "vi": "minh họa, là ví dụ điển hình"
+    },
+    "example": {
+      "en": "This case exemplifies effective public policy.",
+      "vi": "Trường hợp này minh họa chính sách công hiệu quả."
+    },
+    "category": "Environment",
+    "difficulty": "easy"
+  },
+  {
+    "id": "vocab-107",
+    "word": "expedite",
+    "phonetic": "/expedite/",
+    "meaning": {
+      "en": "to make an action happen sooner",
+      "vi": "đẩy nhanh"
+    },
+    "example": {
+      "en": "Digital forms expedite the application process.",
+      "vi": "Biểu mẫu số đẩy nhanh quy trình nộp đơn."
+    },
+    "category": "Technology",
+    "difficulty": "medium"
+  },
+  {
+    "id": "vocab-108",
+    "word": "extrapolate",
+    "phonetic": "/extrapolate/",
+    "meaning": {
+      "en": "to extend known data to predict",
+      "vi": "ngoại suy"
+    },
+    "example": {
+      "en": "Scientists extrapolate trends from sample data.",
+      "vi": "Nhà khoa học ngoại suy xu hướng từ mẫu dữ liệu."
+    },
+    "category": "Health",
+    "difficulty": "hard"
+  },
+  {
+    "id": "vocab-109",
+    "word": "feasible",
+    "phonetic": "/feasible/",
+    "meaning": {
+      "en": "possible and practical to do",
+      "vi": "khả thi"
+    },
+    "example": {
+      "en": "Studying two hours daily is feasible for most students.",
+      "vi": "Học hai giờ mỗi ngày khả thi với đa số học sinh."
+    },
+    "category": "Society",
+    "difficulty": "easy"
+  },
+  {
+    "id": "vocab-110",
+    "word": "flourish",
+    "phonetic": "/flourish/",
+    "meaning": {
+      "en": "to grow or develop successfully",
+      "vi": "phát triển thịnh vượng"
+    },
+    "example": {
+      "en": "Creative industries flourish in major cities.",
+      "vi": "Ngành sáng tạo phát triển ở thành phố lớn."
+    },
+    "category": "Business",
+    "difficulty": "medium"
+  },
+  {
+    "id": "vocab-111",
+    "word": "formidable",
+    "phonetic": "/formidable/",
+    "meaning": {
+      "en": "inspiring fear or respect through difficulty",
+      "vi": "đáng gờm, khó đối phó"
+    },
+    "example": {
+      "en": "IELTS Writing Task 2 is a formidable challenge.",
+      "vi": "Writing Task 2 IELTS là thử thách đáng gờm."
+    },
+    "category": "Science",
+    "difficulty": "hard"
+  },
+  {
+    "id": "vocab-112",
+    "word": "fortify",
+    "phonetic": "/fortify/",
+    "meaning": {
+      "en": "to strengthen physically or mentally",
+      "vi": "củng cố, tăng cường"
+    },
+    "example": {
+      "en": "Mock tests fortify exam readiness.",
+      "vi": "Thi thử củng cố sự sẵn sàng thi."
+    },
+    "category": "Culture",
+    "difficulty": "easy"
+  },
+  {
+    "id": "vocab-113",
+    "word": "foster",
+    "phonetic": "/foster/",
+    "meaning": {
+      "en": "to encourage development",
+      "vi": "nuôi dưỡng, thúc đẩy"
+    },
+    "example": {
+      "en": "Teachers foster critical thinking in class.",
+      "vi": "Giáo viên nuôi dưỡng tư duy phản biện trong lớp."
+    },
+    "category": "Education",
+    "difficulty": "medium"
+  },
+  {
+    "id": "vocab-114",
+    "word": "galvanize",
+    "phonetic": "/galvanize/",
+    "meaning": {
+      "en": "to shock into action",
+      "vi": "thúc đẩy mạnh mẽ"
+    },
+    "example": {
+      "en": "The speech galvanized students to volunteer.",
+      "vi": "Bài phát biểu thúc đẩy sinh viên tình nguyện."
+    },
+    "category": "Environment",
+    "difficulty": "hard"
+  },
+  {
+    "id": "vocab-115",
+    "word": "gauge",
+    "phonetic": "/gauge/",
+    "meaning": {
+      "en": "to measure or judge",
+      "vi": "đo lường, đánh giá"
+    },
+    "example": {
+      "en": "Mock tests gauge your current band level.",
+      "vi": "Thi thử đo lường band hiện tại của bạn."
+    },
+    "category": "Technology",
+    "difficulty": "easy"
+  },
+  {
+    "id": "vocab-116",
+    "word": "hamper",
+    "phonetic": "/hamper/",
+    "meaning": {
+      "en": "to hinder or impede",
+      "vi": "cản trở"
+    },
+    "example": {
+      "en": "Noise can hamper concentration during study.",
+      "vi": "Tiếng ồn cản trở sự tập trung khi học."
+    },
+    "category": "Health",
+    "difficulty": "medium"
+  },
+  {
+    "id": "vocab-117",
+    "word": "hinder",
+    "phonetic": "/hinder/",
+    "meaning": {
+      "en": "to create difficulties",
+      "vi": "cản trở, gây khó khăn"
+    },
+    "example": {
+      "en": "Poor internet hinders online learning.",
+      "vi": "Mạng kém cản trở học trực tuyến."
+    },
+    "category": "Society",
+    "difficulty": "hard"
+  },
+  {
+    "id": "vocab-118",
+    "word": "homogeneous",
+    "phonetic": "/homogeneous/",
+    "meaning": {
+      "en": "of the same kind; uniform",
+      "vi": "đồng nhất"
+    },
+    "example": {
+      "en": "A homogeneous group may lack diverse perspectives.",
+      "vi": "Nhóm đồng nhất có thể thiếu góc nhìn đa dạng."
+    },
+    "category": "Business",
+    "difficulty": "easy"
+  },
+  {
+    "id": "vocab-119",
+    "word": "impede",
+    "phonetic": "/impede/",
+    "meaning": {
+      "en": "to delay or block progress",
+      "vi": "cản trở"
+    },
+    "example": {
+      "en": "Bureaucracy can impede innovation.",
+      "vi": "Quan liêu có thể cản trở đổi mới."
+    },
+    "category": "Science",
+    "difficulty": "medium"
+  },
+  {
+    "id": "vocab-120",
+    "word": "imperative",
+    "phonetic": "/imperative/",
+    "meaning": {
+      "en": "of vital importance; urgent",
+      "vi": "cấp bách, bắt buộc"
+    },
+    "example": {
+      "en": "It is imperative to manage time during the exam.",
+      "vi": "Quản lý thời gian trong kỳ thi là bắt buộc."
+    },
+    "category": "Culture",
+    "difficulty": "hard"
+  },
+  {
+    "id": "vocab-121",
+    "word": "inadvertent",
+    "phonetic": "/inadvertent/",
+    "meaning": {
+      "en": "unintentional",
+      "vi": "vô tình, không cố ý"
+    },
+    "example": {
+      "en": "Inadvertent errors still affect the score.",
+      "vi": "Lỗi vô tình vẫn ảnh hưởng điểm."
+    },
+    "category": "Education",
+    "difficulty": "easy"
+  },
+  {
+    "id": "vocab-122",
+    "word": "incumbent",
+    "phonetic": "/incumbent/",
+    "meaning": {
+      "en": "currently holding a position",
+      "vi": "đương nhiệm"
+    },
+    "example": {
+      "en": "The incumbent director announced reforms.",
+      "vi": "Giám đốc đương nhiệm công bố cải cách."
+    },
+    "category": "Environment",
+    "difficulty": "medium"
+  },
+  {
+    "id": "vocab-123",
+    "word": "indigenous",
+    "phonetic": "/indigenous/",
+    "meaning": {
+      "en": "native to a particular region",
+      "vi": "bản địa"
+    },
+    "example": {
+      "en": "Indigenous knowledge preserves biodiversity.",
+      "vi": "Tri thức bản địa bảo tồn đa dạng sinh học."
+    },
+    "category": "Technology",
+    "difficulty": "hard"
+  },
+  {
+    "id": "vocab-124",
+    "word": "indispensable",
+    "phonetic": "/indispensable/",
+    "meaning": {
+      "en": "absolutely necessary",
+      "vi": "không thể thiếu"
+    },
+    "example": {
+      "en": "Practice is indispensable for IELTS success.",
+      "vi": "Luyện tập không thể thiếu để đạt IELTS."
+    },
+    "category": "Health",
+    "difficulty": "easy"
+  },
+  {
+    "id": "vocab-125",
+    "word": "infer",
+    "phonetic": "/infer/",
+    "meaning": {
+      "en": "to deduce from evidence",
+      "vi": "suy luận"
+    },
+    "example": {
+      "en": "Readers infer meaning from context clues.",
+      "vi": "Người đọc suy luận nghĩa từ ngữ cảnh."
+    },
+    "category": "Society",
+    "difficulty": "medium"
+  },
+  {
+    "id": "vocab-126",
+    "word": "infringe",
+    "phonetic": "/infringe/",
+    "meaning": {
+      "en": "to violate a law or right",
+      "vi": "vi phạm"
+    },
+    "example": {
+      "en": "Copying essays infringes academic integrity.",
+      "vi": "Chép bài vi phạm trung thực học thuật."
+    },
+    "category": "Business",
+    "difficulty": "hard"
+  },
+  {
+    "id": "vocab-127",
+    "word": "innate",
+    "phonetic": "/innate/",
+    "meaning": {
+      "en": "inborn; natural",
+      "vi": "bẩm sinh"
+    },
+    "example": {
+      "en": "Language aptitude has both innate and learned aspects.",
+      "vi": "Năng khiếu ngôn ngữ có yếu tố bẩm sinh và học được."
+    },
+    "category": "Science",
+    "difficulty": "easy"
+  },
+  {
+    "id": "vocab-128",
+    "word": "insightful",
+    "phonetic": "/insightful/",
+    "meaning": {
+      "en": "showing deep understanding",
+      "vi": "sâu sắc"
+    },
+    "example": {
+      "en": "Her essay offered insightful analysis.",
+      "vi": "Bài luận của cô ấy phân tích sâu sắc."
+    },
+    "category": "Culture",
+    "difficulty": "medium"
+  },
+  {
+    "id": "vocab-129",
+    "word": "instigate",
+    "phonetic": "/instigate/",
+    "meaning": {
+      "en": "to bring about or initiate",
+      "vi": "khởi xướng, kích động"
+    },
+    "example": {
+      "en": "Protests instigated policy debate.",
+      "vi": "Biểu tình khởi xướng tranh luận chính sách."
+    },
+    "category": "Education",
+    "difficulty": "hard"
+  },
+  {
+    "id": "vocab-130",
+    "word": "integral",
+    "phonetic": "/integral/",
+    "meaning": {
+      "en": "essential; forming a whole",
+      "vi": "không thể thiếu; tích hợp"
+    },
+    "example": {
+      "en": "Feedback is integral to improvement.",
+      "vi": "Phản hồi là phần không thể thiếu để tiến bộ."
+    },
+    "category": "Environment",
+    "difficulty": "easy"
+  },
+  {
+    "id": "vocab-131",
+    "word": "intermittent",
+    "phonetic": "/intermittent/",
+    "meaning": {
+      "en": "occurring at irregular intervals",
+      "vi": "gián đoạn, không liên tục"
+    },
+    "example": {
+      "en": "Intermittent rain disrupted the outdoor event.",
+      "vi": "Mưa gián đoạn làm gián đoạn sự kiện ngoài trời."
+    },
+    "category": "Technology",
+    "difficulty": "medium"
+  },
+  {
+    "id": "vocab-132",
+    "word": "intricate",
+    "phonetic": "/intricate/",
+    "meaning": {
+      "en": "very complex and detailed",
+      "vi": "phức tạp tinh vi"
+    },
+    "example": {
+      "en": "IELTS reading passages can be intricate.",
+      "vi": "Đoạn đọc IELTS có thể rất phức tạp."
+    },
+    "category": "Health",
+    "difficulty": "hard"
+  },
+  {
+    "id": "vocab-133",
+    "word": "intrinsic",
+    "phonetic": "/intrinsic/",
+    "meaning": {
+      "en": "belonging naturally; essential",
+      "vi": "vốn có, bản chất"
+    },
+    "example": {
+      "en": "Curiosity is intrinsic to effective learning.",
+      "vi": "Tò mò là bản chất của học tập hiệu quả."
+    },
+    "category": "Society",
+    "difficulty": "easy"
+  },
+  {
+    "id": "vocab-134",
+    "word": "juxtapose",
+    "phonetic": "/juxtapose/",
+    "meaning": {
+      "en": "to place side by side for contrast",
+      "vi": "đặt cạnh để so sánh"
+    },
+    "example": {
+      "en": "The author juxtaposes urban and rural life.",
+      "vi": "Tác giả đặt cạnh đời sống thành thị và nông thôn."
+    },
+    "category": "Business",
+    "difficulty": "medium"
+  },
+  {
+    "id": "vocab-135",
+    "word": "lucrative",
+    "phonetic": "/lucrative/",
+    "meaning": {
+      "en": "producing great profit",
+      "vi": "sinh lời cao"
+    },
+    "example": {
+      "en": "Tech careers can be highly lucrative.",
+      "vi": "Nghề công nghệ có thể sinh lời cao."
+    },
+    "category": "Science",
+    "difficulty": "hard"
+  },
+  {
+    "id": "vocab-136",
+    "word": "magnitude",
+    "phonetic": "/magnitude/",
+    "meaning": {
+      "en": "great size or importance",
+      "vi": "quy mô, tầm quan trọng"
+    },
+    "example": {
+      "en": "We underestimated the magnitude of the challenge.",
+      "vi": "Chúng ta đánh giá thấp quy mô thử thách."
+    },
+    "category": "Culture",
+    "difficulty": "easy"
+  },
+  {
+    "id": "vocab-137",
+    "word": "manifest",
+    "phonetic": "/manifest/",
+    "meaning": {
+      "en": "to display clearly; obvious",
+      "vi": "biểu hiện rõ; rõ ràng"
+    },
+    "example": {
+      "en": "Stress can manifest as poor concentration.",
+      "vi": "Căng thẳng biểu hiện qua mất tập trung."
+    },
+    "category": "Education",
+    "difficulty": "medium"
+  },
+  {
+    "id": "vocab-138",
+    "word": "marginal",
+    "phonetic": "/marginal/",
+    "meaning": {
+      "en": "relating to the edge; slight",
+      "vi": "ở rìa; nhỏ"
+    },
+    "example": {
+      "en": "Marginal improvements still raise the band score.",
+      "vi": "Cải thiện nhỏ vẫn nâng band."
+    },
+    "category": "Environment",
+    "difficulty": "hard"
+  },
+  {
+    "id": "vocab-139",
+    "word": "meticulous",
+    "phonetic": "/meticulous/",
+    "meaning": {
+      "en": "showing great attention to detail",
+      "vi": "tỉ mỉ"
+    },
+    "example": {
+      "en": "Meticulous proofreading prevents errors.",
+      "vi": "Đọc lại tỉ mỉ tránh lỗi."
+    },
+    "category": "Technology",
+    "difficulty": "easy"
+  },
+  {
+    "id": "vocab-140",
+    "word": "monolithic",
+    "phonetic": "/monolithic/",
+    "meaning": {
+      "en": "massive and uniform",
+      "vi": "khối thống nhất, đồng nhất"
+    },
+    "example": {
+      "en": "Education systems are rarely monolithic.",
+      "vi": "Hệ giáo dục hiếm khi đồng nhất hoàn toàn."
+    },
+    "category": "Health",
+    "difficulty": "medium"
+  },
+  {
+    "id": "vocab-141",
+    "word": "multifaceted",
+    "phonetic": "/multifaceted/",
+    "meaning": {
+      "en": "having many aspects",
+      "vi": "đa chiều"
+    },
+    "example": {
+      "en": "Climate change is a multifaceted problem.",
+      "vi": "Biến đổi khí hậu là vấn đề đa chiều."
+    },
+    "category": "Society",
+    "difficulty": "hard"
+  },
+  {
+    "id": "vocab-142",
+    "word": "nascent",
+    "phonetic": "/nascent/",
+    "meaning": {
+      "en": "just beginning to develop",
+      "vi": "mới hình thành"
+    },
+    "example": {
+      "en": "Nascent industries need government support.",
+      "vi": "Ngành mới hình thành cần hỗ trợ chính phủ."
+    },
+    "category": "Business",
+    "difficulty": "easy"
+  },
+  {
+    "id": "vocab-143",
+    "word": "negligible",
+    "phonetic": "/negligible/",
+    "meaning": {
+      "en": "so small as to be unimportant",
+      "vi": "không đáng kể"
+    },
+    "example": {
+      "en": "The price difference is negligible.",
+      "vi": "Chênh lệch giá không đáng kể."
+    },
+    "category": "Science",
+    "difficulty": "medium"
+  },
+  {
+    "id": "vocab-144",
+    "word": "nuance",
+    "phonetic": "/nuance/",
+    "meaning": {
+      "en": "a subtle difference in meaning",
+      "vi": "sắc thái"
+    },
+    "example": {
+      "en": "Band 8 writers capture nuance in vocabulary.",
+      "vi": "Người viết Band 8 nắm sắc thái từ vựng."
+    },
+    "category": "Culture",
+    "difficulty": "hard"
+  },
+  {
+    "id": "vocab-145",
+    "word": "oblivious",
+    "phonetic": "/oblivious/",
+    "meaning": {
+      "en": "unaware of what is happening",
+      "vi": "không nhận ra"
+    },
+    "example": {
+      "en": "He was oblivious to the deadline.",
+      "vi": "Anh ấy không nhận ra hạn chót."
+    },
+    "category": "Education",
+    "difficulty": "easy"
+  },
+  {
+    "id": "vocab-146",
+    "word": "omnipresent",
+    "phonetic": "/omnipresent/",
+    "meaning": {
+      "en": "present everywhere",
+      "vi": "hiện diện khắp nơi"
+    },
+    "example": {
+      "en": "Smartphones are omnipresent in modern life.",
+      "vi": "Smartphone hiện diện khắp nơi trong đời sống hiện đại."
+    },
+    "category": "Environment",
+    "difficulty": "medium"
+  },
+  {
+    "id": "vocab-147",
+    "word": "onerous",
+    "phonetic": "/onerous/",
+    "meaning": {
+      "en": "involving great effort; burdensome",
+      "vi": "nặng nề, khó khăn"
+    },
+    "example": {
+      "en": "Onerous regulations discourage small businesses.",
+      "vi": "Quy định nặng nề làm nhỏ lệ doanh nghiệp."
+    },
+    "category": "Technology",
+    "difficulty": "hard"
+  },
+  {
+    "id": "vocab-148",
+    "word": "optimal",
+    "phonetic": "/optimal/",
+    "meaning": {
+      "en": "best or most favourable",
+      "vi": "tối ưu"
+    },
+    "example": {
+      "en": "Morning study may be optimal for some learners.",
+      "vi": "Học buổi sáng có thể tối ưu với một số người."
+    },
+    "category": "Health",
+    "difficulty": "easy"
+  },
+  {
+    "id": "vocab-149",
+    "word": "ornate",
+    "phonetic": "/ornate/",
+    "meaning": {
+      "en": "elaborately decorated",
+      "vi": "trang trí cầu kỳ"
+    },
+    "example": {
+      "en": "Ornate language can obscure meaning in essays.",
+      "vi": "Văn phong cầu kỳ có thể che khuất ý trong bài luận."
+    },
+    "category": "Society",
+    "difficulty": "medium"
+  },
+  {
+    "id": "vocab-150",
+    "word": "ostensible",
+    "phonetic": "/ostensible/",
+    "meaning": {
+      "en": "appearing true but possibly not",
+      "vi": "bề ngoài, có vẻ"
+    },
+    "example": {
+      "en": "The ostensible reason masked deeper issues.",
+      "vi": "Lý do bề ngoài che giấu vấn đề sâu xa."
+    },
+    "category": "Business",
+    "difficulty": "hard"
+  },
+  {
+    "id": "vocab-151",
+    "word": "paradox",
+    "phonetic": "/paradox/",
+    "meaning": {
+      "en": "a seemingly contradictory statement",
+      "vi": "nghịch lý"
+    },
+    "example": {
+      "en": "It is a paradox that more choice can reduce satisfaction.",
+      "vi": "Nghịch lý là nhiều lựa chọn có thể giảm hài lòng."
+    },
+    "category": "Science",
+    "difficulty": "easy"
+  },
+  {
+    "id": "vocab-152",
+    "word": "pervasive",
+    "phonetic": "/pervasive/",
+    "meaning": {
+      "en": "spreading widely throughout",
+      "vi": "lan tỏa khắp nơi"
+    },
+    "example": {
+      "en": "Social media has a pervasive influence on youth.",
+      "vi": "Mạng xã hội ảnh hưởng lan tỏa đến thanh niên."
+    },
+    "category": "Culture",
+    "difficulty": "medium"
+  },
+  {
+    "id": "vocab-153",
+    "word": "plausible",
+    "phonetic": "/plausible/",
+    "meaning": {
+      "en": "seeming reasonable or probable",
+      "vi": "hợp lý, có vẻ đúng"
+    },
+    "example": {
+      "en": "The explanation sounds plausible but lacks evidence.",
+      "vi": "Giải thích nghe hợp lý nhưng thiếu bằng chứng."
+    },
+    "category": "Education",
+    "difficulty": "hard"
+  },
+  {
+    "id": "vocab-154",
+    "word": "pragmatic",
+    "phonetic": "/pragmatic/",
+    "meaning": {
+      "en": "dealing with things practically",
+      "vi": "thực tiễn"
+    },
+    "example": {
+      "en": "A pragmatic approach focuses on achievable goals.",
+      "vi": "Cách tiếp cận thực tiễn tập trung mục tiêu khả thi."
+    },
+    "category": "Environment",
+    "difficulty": "easy"
+  },
+  {
+    "id": "vocab-155",
+    "word": "precarious",
+    "phonetic": "/precarious/",
+    "meaning": {
+      "en": "not securely held; uncertain",
+      "vi": "bấp bênh, không chắc chắn"
+    },
+    "example": {
+      "en": "Freelancers often face precarious income.",
+      "vi": "Freelancer thường đối mặt thu nhập bấp bênh."
+    },
+    "category": "Technology",
+    "difficulty": "medium"
+  },
+  {
+    "id": "vocab-156",
+    "word": "preclude",
+    "phonetic": "/preclude/",
+    "meaning": {
+      "en": "to prevent from happening",
+      "vi": "ngăn cản"
+    },
+    "example": {
+      "en": "Low scores preclude admission to top programmes.",
+      "vi": "Điểm thấp ngăn tuyển vào chương trình hàng đầu."
+    },
+    "category": "Health",
+    "difficulty": "hard"
+  },
+  {
+    "id": "vocab-157",
+    "word": "predilection",
+    "phonetic": "/predilection/",
+    "meaning": {
+      "en": "a preference for something",
+      "vi": "thiên hướng, sở thích"
+    },
+    "example": {
+      "en": "She has a predilection for argumentative essays.",
+      "vi": "Cô ấy có thiên hướng viết luận tranh luận."
+    },
+    "category": "Society",
+    "difficulty": "easy"
+  },
+  {
+    "id": "vocab-158",
+    "word": "preliminary",
+    "phonetic": "/preliminary/",
+    "meaning": {
+      "en": "coming before the main part",
+      "vi": "sơ bộ, ban đầu"
+    },
+    "example": {
+      "en": "Preliminary results suggest further research is needed.",
+      "vi": "Kết quả sơ bộ cho thấy cần nghiên cứu thêm."
+    },
+    "category": "Business",
+    "difficulty": "medium"
+  },
+  {
+    "id": "vocab-159",
+    "word": "presume",
+    "phonetic": "/presume/",
+    "meaning": {
+      "en": "to suppose without proof",
+      "vi": "cho rằng, giả định"
+    },
+    "example": {
+      "en": "Do not presume the answer without reading fully.",
+      "vi": "Đừng giả định đáp án khi chưa đọc kỹ."
+    },
+    "category": "Science",
+    "difficulty": "hard"
+  },
+  {
+    "id": "vocab-160",
+    "word": "profound",
+    "phonetic": "/profound/",
+    "meaning": {
+      "en": "very great or intense; deep",
+      "vi": "sâu sắc"
+    },
+    "example": {
+      "en": "Travel had a profound impact on her worldview.",
+      "vi": "Du lịch tác động sâu sắc đến thế giới quan cô ấy."
+    },
+    "category": "Culture",
+    "difficulty": "easy"
+  },
+  {
+    "id": "vocab-161",
+    "word": "prolific",
+    "phonetic": "/prolific/",
+    "meaning": {
+      "en": "producing much output",
+      "vi": "có năng suất cao"
+    },
+    "example": {
+      "en": "He is a prolific writer of IELTS materials.",
+      "vi": "Ông ấy viết tài liệu IELTS rất nhiều."
+    },
+    "category": "Education",
+    "difficulty": "medium"
+  },
+  {
+    "id": "vocab-162",
+    "word": "prominent",
+    "phonetic": "/prominent/",
+    "meaning": {
+      "en": "important; well-known",
+      "vi": "nổi bật"
+    },
+    "example": {
+      "en": "She is a prominent figure in education reform.",
+      "vi": "Cô ấy là nhân vật nổi bật trong cải cách giáo dục."
+    },
+    "category": "Environment",
+    "difficulty": "hard"
+  },
+  {
+    "id": "vocab-163",
+    "word": "prone",
+    "phonetic": "/prone/",
+    "meaning": {
+      "en": "likely to suffer from",
+      "vi": "dễ bị, có khuynh hướng"
+    },
+    "example": {
+      "en": "Students are prone to procrastination before exams.",
+      "vi": "Học sinh dễ trì hoãn trước kỳ thi."
+    },
+    "category": "Technology",
+    "difficulty": "easy"
+  },
+  {
+    "id": "vocab-164",
+    "word": "proponent",
+    "phonetic": "/proponent/",
+    "meaning": {
+      "en": "a person who advocates for",
+      "vi": "người ủng hộ"
+    },
+    "example": {
+      "en": "Proponents of online learning cite flexibility.",
+      "vi": "Người ủng hộ học trực tuyến nhấn mạnh tính linh hoạt."
+    },
+    "category": "Health",
+    "difficulty": "medium"
+  },
+  {
+    "id": "vocab-165",
+    "word": "prosperous",
+    "phonetic": "/prosperous/",
+    "meaning": {
+      "en": "successful and thriving",
+      "vi": "thịnh vượng"
+    },
+    "example": {
+      "en": "Education correlates with prosperous communities.",
+      "vi": "Giáo dục gắn với cộng đồng thịnh vượng."
+    },
+    "category": "Society",
+    "difficulty": "hard"
+  },
+  {
+    "id": "vocab-166",
+    "word": "prudent",
+    "phonetic": "/prudent/",
+    "meaning": {
+      "en": "acting with care and thought",
+      "vi": "thận trọng"
+    },
+    "example": {
+      "en": "It is prudent to simulate exam conditions.",
+      "vi": "Mô phỏng điều kiện thi là thận trọng."
+    },
+    "category": "Business",
+    "difficulty": "easy"
+  },
+  {
+    "id": "vocab-167",
+    "word": "rampant",
+    "phonetic": "/rampant/",
+    "meaning": {
+      "en": "uncontrolled; widespread",
+      "vi": "tràn lan"
+    },
+    "example": {
+      "en": "Misinformation is rampant on social platforms.",
+      "vi": "Thông tin sai tràn lan trên mạng xã hội."
+    },
+    "category": "Science",
+    "difficulty": "medium"
+  },
+  {
+    "id": "vocab-168",
+    "word": "reciprocal",
+    "phonetic": "/reciprocal/",
+    "meaning": {
+      "en": "given and received in return",
+      "vi": "có đi có lại"
+    },
+    "example": {
+      "en": "Learning benefits from reciprocal feedback.",
+      "vi": "Học tập hưởng lợi từ phản hồi qua lại."
+    },
+    "category": "Culture",
+    "difficulty": "hard"
+  },
+  {
+    "id": "vocab-169",
+    "word": "reconcile",
+    "phonetic": "/reconcile/",
+    "meaning": {
+      "en": "to restore friendly relations; to make consistent",
+      "vi": "hòa giải; hài hòa"
+    },
+    "example": {
+      "en": "Policy must reconcile growth and sustainability.",
+      "vi": "Chính sách phải hài hòa tăng trưởng và bền vững."
+    },
+    "category": "Education",
+    "difficulty": "easy"
+  },
+  {
+    "id": "vocab-170",
+    "word": "redundant",
+    "phonetic": "/redundant/",
+    "meaning": {
+      "en": "no longer needed; repetitive",
+      "vi": "thừa, lặp lại"
+    },
+    "example": {
+      "en": "Avoid redundant phrases in academic writing.",
+      "vi": "Tránh cụm từ thừa trong văn viết học thuật."
+    },
+    "category": "Environment",
+    "difficulty": "medium"
+  },
+  {
+    "id": "vocab-171",
+    "word": "refute",
+    "phonetic": "/refute/",
+    "meaning": {
+      "en": "to prove a statement wrong",
+      "vi": "bác bỏ"
+    },
+    "example": {
+      "en": "New data refute the earlier hypothesis.",
+      "vi": "Dữ liệu mới bác bỏ giả thuyết trước."
+    },
+    "category": "Technology",
+    "difficulty": "hard"
+  },
+  {
+    "id": "vocab-172",
+    "word": "reiterate",
+    "phonetic": "/reiterate/",
+    "meaning": {
+      "en": "to say again for emphasis",
+      "vi": "nhắc lại"
+    },
+    "example": {
+      "en": "The examiner reiterated the time limit.",
+      "vi": "Giám khảo nhắc lại giới hạn thời gian."
+    },
+    "category": "Health",
+    "difficulty": "easy"
+  },
+  {
+    "id": "vocab-173",
+    "word": "relinquish",
+    "phonetic": "/relinquish/",
+    "meaning": {
+      "en": "to give up voluntarily",
+      "vi": "từ bỏ"
+    },
+    "example": {
+      "en": "He refused to relinquish his leadership role.",
+      "vi": "Anh ấy từ chối từ bỏ vai trò lãnh đạo."
+    },
+    "category": "Society",
+    "difficulty": "medium"
+  },
+  {
+    "id": "vocab-174",
+    "word": "reminiscent",
+    "phonetic": "/reminiscent/",
+    "meaning": {
+      "en": "tending to remind of something",
+      "vi": "gợi nhớ"
+    },
+    "example": {
+      "en": "The melody is reminiscent of traditional folk songs.",
+      "vi": "Giai điệu gợi nhớ dân ca truyền thống."
+    },
+    "category": "Business",
+    "difficulty": "hard"
+  },
+  {
+    "id": "vocab-175",
+    "word": "replicate",
+    "phonetic": "/replicate/",
+    "meaning": {
+      "en": "to make an exact copy; repeat",
+      "vi": "nhân bản, lặp lại"
+    },
+    "example": {
+      "en": "Researchers replicate experiments to verify results.",
+      "vi": "Nhà khoa học lặp lại thí nghiệm để xác minh."
+    },
+    "category": "Science",
+    "difficulty": "easy"
+  },
+  {
+    "id": "vocab-176",
+    "word": "resilient",
+    "phonetic": "/resilient/",
+    "meaning": {
+      "en": "able to recover quickly",
+      "vi": "kiên cường, phục hồi nhanh"
+    },
+    "example": {
+      "en": "Resilient learners bounce back after low scores.",
+      "vi": "Người học kiên cường vượt qua điểm thấp."
+    },
+    "category": "Culture",
+    "difficulty": "medium"
+  },
+  {
+    "id": "vocab-177",
+    "word": "restrain",
+    "phonetic": "/restrain/",
+    "meaning": {
+      "en": "to prevent from doing something",
+      "vi": "kiềm chế, hạn chế"
+    },
+    "example": {
+      "en": "Students must restrain impulse answers in reading.",
+      "vi": "Học sinh phải kiềm chế trả lời vội khi đọc."
+    },
+    "category": "Education",
+    "difficulty": "hard"
+  },
+  {
+    "id": "vocab-178",
+    "word": "retrospect",
+    "phonetic": "/retrospect/",
+    "meaning": {
+      "en": "looking back on past events",
+      "vi": "nhìn lại quá khứ"
+    },
+    "example": {
+      "en": "In retrospect, daily practice was the key.",
+      "vi": "Nhìn lại, luyện tập hàng ngày là chìa khóa."
+    },
+    "category": "Environment",
+    "difficulty": "easy"
+  },
+  {
+    "id": "vocab-179",
+    "word": "rhetoric",
+    "phonetic": "/rhetoric/",
+    "meaning": {
+      "en": "the art of persuasive speaking",
+      "vi": "hùng biện, tu từ"
+    },
+    "example": {
+      "en": "Political rhetoric often oversimplifies complex issues.",
+      "vi": "Tu từ chính trị thường đơn giản hóa vấn đề phức tạp."
+    },
+    "category": "Technology",
+    "difficulty": "medium"
+  },
+  {
+    "id": "vocab-180",
+    "word": "rudimentary",
+    "phonetic": "/rudimentary/",
+    "meaning": {
+      "en": "basic; not fully developed",
+      "vi": "sơ đẳng, cơ bản"
+    },
+    "example": {
+      "en": "He has only rudimentary knowledge of grammar.",
+      "vi": "Anh ấy chỉ có kiến thức ngữ pháp cơ bản."
+    },
+    "category": "Health",
+    "difficulty": "hard"
+  },
+  {
+    "id": "vocab-181",
+    "word": "salient",
+    "phonetic": "/salient/",
+    "meaning": {
+      "en": "most noticeable or important",
+      "vi": "nổi bật, quan trọng nhất"
+    },
+    "example": {
+      "en": "Identify the salient features of the chart.",
+      "vi": "Xác định đặc điểm nổi bật của biểu đồ."
+    },
+    "category": "Society",
+    "difficulty": "easy"
+  },
+  {
+    "id": "vocab-182",
+    "word": "scrutiny",
+    "phonetic": "/scrutiny/",
+    "meaning": {
+      "en": "critical observation or examination",
+      "vi": "sự xem xét kỹ"
+    },
+    "example": {
+      "en": "Funding proposals face public scrutiny.",
+      "vi": "Đề xuất kinh phí chịu sự xem xét công chúng."
+    },
+    "category": "Business",
+    "difficulty": "medium"
+  },
+  {
+    "id": "vocab-183",
+    "word": "secular",
+    "phonetic": "/secular/",
+    "meaning": {
+      "en": "not connected with religion",
+      "vi": "thế tục"
+    },
+    "example": {
+      "en": "Many countries provide secular education.",
+      "vi": "Nhiều quốc gia cung cấp giáo dục thế tục."
+    },
+    "category": "Science",
+    "difficulty": "hard"
+  },
+  {
+    "id": "vocab-184",
+    "word": "sedentary",
+    "phonetic": "/sedentary/",
+    "meaning": {
+      "en": "involving much sitting; inactive",
+      "vi": "ít vận động"
+    },
+    "example": {
+      "en": "Sedentary lifestyles increase health risks.",
+      "vi": "Lối sống ít vận động tăng rủi ro sức khỏe."
+    },
+    "category": "Culture",
+    "difficulty": "easy"
+  },
+  {
+    "id": "vocab-185",
+    "word": "serendipity",
+    "phonetic": "/serendipity/",
+    "meaning": {
+      "en": "finding something good by chance",
+      "vi": "tình cờ may mắn"
+    },
+    "example": {
+      "en": "Serendipity led her to discover a useful study method.",
+      "vi": "Tình cờ giúp cô ấy tìm ra phương pháp học hữu ích."
+    },
+    "category": "Education",
+    "difficulty": "medium"
+  },
+  {
+    "id": "vocab-186",
+    "word": "skeptical",
+    "phonetic": "/skeptical/",
+    "meaning": {
+      "en": "having doubts; not easily convinced",
+      "vi": "hoài nghi"
+    },
+    "example": {
+      "en": "Experts remain skeptical about the new claim.",
+      "vi": "Chuyên gia vẫn hoài nghi về tuyên bố mới."
+    },
+    "category": "Environment",
+    "difficulty": "hard"
+  },
+  {
+    "id": "vocab-187",
+    "word": "sovereign",
+    "phonetic": "/sovereign/",
+    "meaning": {
+      "en": "having supreme power; independent",
+      "vi": "chủ quyền"
+    },
+    "example": {
+      "en": "Each nation retains sovereign control over education.",
+      "vi": "Mỗi quốc gia giữ quyền chủ quyền giáo dục."
+    },
+    "category": "Technology",
+    "difficulty": "easy"
+  },
+  {
+    "id": "vocab-188",
+    "word": "sporadic",
+    "phonetic": "/sporadic/",
+    "meaning": {
+      "en": "occurring irregularly",
+      "vi": "rời rạc, không đều"
+    },
+    "example": {
+      "en": "Sporadic study yields inconsistent results.",
+      "vi": "Học rời rạc cho kết quả không ổn định."
+    },
+    "category": "Health",
+    "difficulty": "medium"
+  },
+  {
+    "id": "vocab-189",
+    "word": "stagnant",
+    "phonetic": "/stagnant/",
+    "meaning": {
+      "en": "showing no activity or development",
+      "vi": "trì trệ"
+    },
+    "example": {
+      "en": "Stagnant wages concern young workers.",
+      "vi": "Lương trì trệ khiến lao động trẻ lo ngại."
+    },
+    "category": "Society",
+    "difficulty": "hard"
+  },
+  {
+    "id": "vocab-190",
+    "word": "stipulate",
+    "phonetic": "/stipulate/",
+    "meaning": {
+      "en": "to demand as a condition",
+      "vi": "quy định"
+    },
+    "example": {
+      "en": "Universities stipulate minimum IELTS requirements.",
+      "vi": "Đại học quy định yêu cầu IELTS tối thiểu."
+    },
+    "category": "Business",
+    "difficulty": "easy"
+  },
+  {
+    "id": "vocab-191",
+    "word": "subordinate",
+    "phonetic": "/subordinate/",
+    "meaning": {
+      "en": "lower in rank; less important",
+      "vi": "cấp dưới; phụ thuộc"
+    },
+    "example": {
+      "en": "Subordinate clauses add complexity to sentences.",
+      "vi": "Mệnh đề phụ thuộc làm câu phức tạp hơn."
+    },
+    "category": "Science",
+    "difficulty": "medium"
+  },
+  {
+    "id": "vocab-192",
+    "word": "substantial",
+    "phonetic": "/substantial/",
+    "meaning": {
+      "en": "of considerable importance or size",
+      "vi": "đáng kể"
+    },
+    "example": {
+      "en": "She made substantial progress in two months.",
+      "vi": "Cô ấy tiến bộ đáng kể trong hai tháng."
+    },
+    "category": "Culture",
+    "difficulty": "hard"
+  },
+  {
+    "id": "vocab-193",
+    "word": "succinct",
+    "phonetic": "/succinct/",
+    "meaning": {
+      "en": "briefly and clearly expressed",
+      "vi": "súc tích"
+    },
+    "example": {
+      "en": "A succinct introduction sets a strong tone.",
+      "vi": "Mở bài súc tích tạo ấn tượng tốt."
+    },
+    "category": "Education",
+    "difficulty": "easy"
+  },
+  {
+    "id": "vocab-194",
+    "word": "supersede",
+    "phonetic": "/supersede/",
+    "meaning": {
+      "en": "to replace something older",
+      "vi": "thay thế"
+    },
+    "example": {
+      "en": "Digital records supersede paper archives.",
+      "vi": "Hồ sơ số thay thế kho giấy."
+    },
+    "category": "Environment",
+    "difficulty": "medium"
+  },
+  {
+    "id": "vocab-195",
+    "word": "susceptible",
+    "phonetic": "/susceptible/",
+    "meaning": {
+      "en": "likely to be influenced or harmed",
+      "vi": "dễ bị ảnh hưởng"
+    },
+    "example": {
+      "en": "Children are susceptible to advertising.",
+      "vi": "Trẻ em dễ bị quảng cáo ảnh hưởng."
+    },
+    "category": "Technology",
+    "difficulty": "hard"
+  },
+  {
+    "id": "vocab-196",
+    "word": "synthesis",
+    "phonetic": "/synthesis/",
+    "meaning": {
+      "en": "combining ideas into a whole",
+      "vi": "tổng hợp"
+    },
+    "example": {
+      "en": "Task 2 requires synthesis of multiple viewpoints.",
+      "vi": "Task 2 đòi hỏi tổng hợp nhiều quan điểm."
+    },
+    "category": "Health",
+    "difficulty": "easy"
+  },
+  {
+    "id": "vocab-197",
+    "word": "tacit",
+    "phonetic": "/tacit/",
+    "meaning": {
+      "en": "understood without being stated",
+      "vi": "ngầm hiểu"
+    },
+    "example": {
+      "en": "There was tacit agreement to share notes.",
+      "vi": "Có sự đồng thuận ngầm chia sẻ ghi chú."
+    },
+    "category": "Society",
+    "difficulty": "medium"
+  },
+  {
+    "id": "vocab-198",
+    "word": "tedious",
+    "phonetic": "/tedious/",
+    "meaning": {
+      "en": "too long, slow, or boring",
+      "vi": "nhàm chán, tẻ nhạt"
+    },
+    "example": {
+      "en": "Proofreading can feel tedious but is essential.",
+      "vi": "Đọc lại có thể nhàm chán nhưng rất cần."
+    },
+    "category": "Business",
+    "difficulty": "hard"
+  },
+  {
+    "id": "vocab-199",
+    "word": "tenet",
+    "phonetic": "/tenet/",
+    "meaning": {
+      "en": "a principle or belief",
+      "vi": "nguyên tắc, tín điều"
+    },
+    "example": {
+      "en": "Fair assessment is a core tenet of IELTS.",
+      "vi": "Đánh giá công bằng là nguyên tắc cốt lõi của IELTS."
+    },
+    "category": "Science",
+    "difficulty": "easy"
+  },
+  {
+    "id": "vocab-200",
+    "word": "trajectory",
+    "phonetic": "/trajectory/",
+    "meaning": {
+      "en": "the path of development",
+      "vi": "quỹ đạo, hướng phát triển"
+    },
+    "example": {
+      "en": "Her score trajectory shows steady improvement.",
+      "vi": "Quỹ đạo điểm của cô ấy cho thấy tiến bộ đều."
+    },
+    "category": "Culture",
+    "difficulty": "medium"
+  },
+  {
+    "id": "vocab-201",
+    "word": "transcend",
+    "phonetic": "/transcend/",
+    "meaning": {
+      "en": "to go beyond limits",
+      "vi": "vượt qua, siêu việt"
+    },
+    "example": {
+      "en": "Great teachers transcend language barriers.",
+      "vi": "Giáo viên giỏi vượt qua rào cản ngôn ngữ."
+    },
+    "category": "Education",
+    "difficulty": "hard"
+  },
+  {
+    "id": "vocab-202",
+    "word": "trivial",
+    "phonetic": "/trivial/",
+    "meaning": {
+      "en": "of little importance",
+      "vi": "tầm thường, không quan trọng"
+    },
+    "example": {
+      "en": "Do not waste time on trivial details in Task 1.",
+      "vi": "Đừng lãng phí thời gian vào chi tiết tầm thường ở Task 1."
+    },
+    "category": "Environment",
+    "difficulty": "easy"
+  },
+  {
+    "id": "vocab-203",
+    "word": "ubiquitous",
+    "phonetic": "/ubiquitous/",
+    "meaning": {
+      "en": "present everywhere",
+      "vi": "phổ biến khắp nơi"
+    },
+    "example": {
+      "en": "Wi-Fi is ubiquitous on university campuses.",
+      "vi": "Wi-Fi phổ biến khắp khuôn viên đại học."
+    },
+    "category": "Technology",
+    "difficulty": "medium"
+  },
+  {
+    "id": "vocab-204",
+    "word": "unequivocal",
+    "phonetic": "/unequivocal/",
+    "meaning": {
+      "en": "leaving no doubt; clear",
+      "vi": "rõ ràng, không mơ hồ"
+    },
+    "example": {
+      "en": "The data provide unequivocal support for the theory.",
+      "vi": "Dữ liệu ủng hộ giả thuyết một cách rõ ràng."
+    },
+    "category": "Health",
+    "difficulty": "hard"
+  },
+  {
+    "id": "vocab-205",
+    "word": "unilateral",
+    "phonetic": "/unilateral/",
+    "meaning": {
+      "en": "done by one party only",
+      "vi": "một phía"
+    },
+    "example": {
+      "en": "Unilateral decisions may provoke opposition.",
+      "vi": "Quyết định một phía có thể gây phản đối."
+    },
+    "category": "Society",
+    "difficulty": "easy"
+  },
+  {
+    "id": "vocab-206",
+    "word": "utilitarian",
+    "phonetic": "/utilitarian/",
+    "meaning": {
+      "en": "designed to be useful rather than attractive",
+      "vi": "thực dụng"
+    },
+    "example": {
+      "en": "The building has a utilitarian design.",
+      "vi": "Tòa nhà có thiết kế thực dụng."
+    },
+    "category": "Business",
+    "difficulty": "medium"
+  },
+  {
+    "id": "vocab-207",
+    "word": "vacillate",
+    "phonetic": "/vacillate/",
+    "meaning": {
+      "en": "to waver between options",
+      "vi": "dao động, lưỡng lự"
+    },
+    "example": {
+      "en": "Do not vacillate between two answers in the exam.",
+      "vi": "Đừng lưỡng lự giữa hai đáp án khi thi."
+    },
+    "category": "Science",
+    "difficulty": "hard"
+  },
+  {
+    "id": "vocab-208",
+    "word": "vehement",
+    "phonetic": "/vehement/",
+    "meaning": {
+      "en": "showing strong feeling",
+      "vi": "mãnh liệt"
+    },
+    "example": {
+      "en": "She was vehement in defending her thesis.",
+      "vi": "Cô ấy bảo vệ luận điểm một cách mãnh liệt."
+    },
+    "category": "Culture",
+    "difficulty": "easy"
+  },
+  {
+    "id": "vocab-209",
+    "word": "venerable",
+    "phonetic": "/venerable/",
+    "meaning": {
+      "en": "accorded great respect due to age",
+      "vi": "đáng kính"
+    },
+    "example": {
+      "en": "The venerable institution celebrated its centenary.",
+      "vi": "Tổ chức đáng kính kỷ niệm 100 năm."
+    },
+    "category": "Education",
+    "difficulty": "medium"
+  },
+  {
+    "id": "vocab-210",
+    "word": "verbose",
+    "phonetic": "/verbose/",
+    "meaning": {
+      "en": "using more words than needed",
+      "vi": "dài dòng"
+    },
+    "example": {
+      "en": "Verbose answers lose clarity and coherence.",
+      "vi": "Câu trả lời dài dòng mất rõ ràng và mạch lạc."
+    },
+    "category": "Environment",
+    "difficulty": "hard"
+  },
+  {
+    "id": "vocab-211",
+    "word": "vestige",
+    "phonetic": "/vestige/",
+    "meaning": {
+      "en": "a trace of something disappearing",
+      "vi": "dấu vết còn sót"
+    },
+    "example": {
+      "en": "Old customs are a vestige of colonial influence.",
+      "vi": "Phong tục cũ là dấu vết ảnh hưởng thuộc địa."
+    },
+    "category": "Technology",
+    "difficulty": "easy"
+  },
+  {
+    "id": "vocab-212",
+    "word": "vicarious",
+    "phonetic": "/vicarious/",
+    "meaning": {
+      "en": "experienced through another person",
+      "vi": "gián tiếp, thay mặt"
+    },
+    "example": {
+      "en": "Parents feel vicarious pride in children's success.",
+      "vi": "Cha mẹ tự hào gián tiếp vì thành công con."
+    },
+    "category": "Health",
+    "difficulty": "medium"
+  },
+  {
+    "id": "vocab-213",
+    "word": "vindicate",
+    "phonetic": "/vindicate/",
+    "meaning": {
+      "en": "to clear from blame; justify",
+      "vi": "minh oan, chứng minh đúng"
+    },
+    "example": {
+      "en": "Results vindicated her study strategy.",
+      "vi": "Kết quả chứng minh chiến lược học của cô ấy đúng."
+    },
+    "category": "Society",
+    "difficulty": "hard"
+  },
+  {
+    "id": "vocab-214",
+    "word": "virtuous",
+    "phonetic": "/virtuous/",
+    "meaning": {
+      "en": "having high moral standards",
+      "vi": "đức hạnh"
+    },
+    "example": {
+      "en": "Virtuous leadership builds public trust.",
+      "vi": "Lãnh đạo đức hạnh xây dựng niềm tin công chúng."
+    },
+    "category": "Business",
+    "difficulty": "easy"
+  },
+  {
+    "id": "vocab-215",
+    "word": "voracious",
+    "phonetic": "/voracious/",
+    "meaning": {
+      "en": "wanting great quantities; eager",
+      "vi": "ham đọc, tham lam"
+    },
+    "example": {
+      "en": "She is a voracious reader of academic journals.",
+      "vi": "Cô ấy ham đọc tạp chí học thuật."
+    },
+    "category": "Science",
+    "difficulty": "medium"
+  },
+  {
+    "id": "vocab-216",
+    "word": "whimsical",
+    "phonetic": "/whimsical/",
+    "meaning": {
+      "en": "playfully quaint or unpredictable",
+      "vi": "kỳ quặc, bất chợt"
+    },
+    "example": {
+      "en": "Whimsical ideas rarely suit formal essays.",
+      "vi": "Ý tưởng kỳ quặc hiếm phù hợp bài luận trang trọng."
+    },
+    "category": "Culture",
+    "difficulty": "hard"
+  },
+  {
+    "id": "vocab-217",
+    "word": "zealous",
+    "phonetic": "/zealous/",
+    "meaning": {
+      "en": "showing great enthusiasm",
+      "vi": "nhiệt huyết"
+    },
+    "example": {
+      "en": "Zealous preparation distinguishes top candidates.",
+      "vi": "Chuẩn bị nhiệt huyết tạo khác biệt cho ứng viên hàng đầu."
+    },
+    "category": "Education",
+    "difficulty": "easy"
+  }
+];
