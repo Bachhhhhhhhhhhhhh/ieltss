@@ -32,16 +32,9 @@ Mở trình duyệt: **http://localhost:5173**
 
 ## Xem online (không cần cài gì)
 
-Sau khi bật GitHub Pages (xem mục Deploy), truy cập:
-
 **https://bachhhhhhhhhhhhhh.github.io/ieltss/**
 
-## Bật GitHub Pages (1 lần)
-
-1. Vào https://github.com/Bachhhhhhhhhhhhhh/ieltss/settings/pages
-2. **Build and deployment** → Source: **GitHub Actions**
-3. Đợi workflow chạy xong (~2 phút) tại tab **Actions**
-4. Mở link ở trên
+> Nếu trang trắng: vào Settings → Pages → Source chọn **GitHub Actions** hoặc nhánh **gh-pages**, đợi 1–2 phút rồi refresh.
 
 ## Scripts
 
